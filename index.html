@@ -1,0 +1,1768 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>Productos de Trigo · Análisis preparado por London Consulting Group</title>
+<meta name="description" content="Pieza de inteligencia comercial preparada para Productos de Trigo, S.A. de C.V.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<!--
+  NOTA TIPOGRÁFICA — swap pendiente de DIN 2014.
+  El brandbook de LCG reserva DIN 2014 para cifras y metadata ("la voz de la prueba").
+  Los archivos DIN 2014 disponibles en el proyecto son builds DEMO de Fontspring, con
+  cobertura de glifos incompleta (falta al menos '#'), no licenciados para producción.
+  Mientras tanto --font-numeric apunta a Manrope con font-variant-numeric: tabular-nums.
+  Al recibir los archivos retail licenciados, basta cambiar --font-numeric y agregar el @font-face.
+-->
+<style>
+/* ============================================================
+   TOKENS — design system LCG
+   ============================================================ */
+:root{
+  /* Paleta oficial */
+  --london-green-dark:#085E54;
+  --london-green:#03B585;
+  --london-mint:#BAF4E9;
+  --london-cream:#F2EEEB;
+  --london-lime:#C9E265;      /* acento de gradiente — nunca fondo plano ni texto de cuerpo */
+
+  --green-900:#073E38;
+  --green-800:#085E54;
+  --green-700:#0A7568;
+  --green-600:#039271;
+  --green-500:#03B585;
+  --green-400:#2FCB9E;
+  --green-300:#7FE0C0;
+  --green-200:#BAF4E9;
+  --green-100:#DFF9F0;
+
+  --neutral-0:#FFFEFC;
+  --neutral-50:#F2EEEB;
+  --neutral-100:#E9E3DC;
+  --neutral-200:#DCD4C9;
+  --neutral-300:#C2B8AB;
+  --neutral-400:#9A9086;
+  --neutral-500:#756C63;
+  --neutral-600:#574F49;
+  --neutral-700:#3D3733;
+  --neutral-800:#272320;
+
+  --surface-page:var(--neutral-50);
+  --surface-card:var(--neutral-0);
+  --surface-sunken:var(--neutral-100);
+  --text-primary:var(--neutral-800);
+  --text-secondary:var(--neutral-500);
+  --text-muted:var(--neutral-400);
+  --text-on-dark:var(--neutral-50);
+  --text-on-dark-muted:var(--green-300);
+  --border-subtle:var(--neutral-200);
+  --border-default:var(--neutral-300);
+  --border-on-dark:rgba(242,238,235,.18);
+
+  --font-sans:"Manrope","Helvetica Neue",Arial,sans-serif;
+  --font-numeric:"Manrope","Helvetica Neue",Arial,sans-serif; /* swap → "DIN 2014" */
+
+  --text-xs:13px; --text-sm:15px; --text-base:17px; --text-md:20px;
+  --text-lg:25px; --text-xl:32px; --text-2xl:40px; --text-3xl:52px; --text-4xl:68px;
+
+  --space-1:4px; --space-2:8px; --space-3:12px; --space-4:16px; --space-5:24px;
+  --space-6:32px; --space-7:48px; --space-8:64px; --space-9:96px;
+
+  --radius-sm:6px; --radius-md:10px; --radius-lg:16px; --radius-xl:24px; --radius-pill:999px;
+  --shadow-color:30 20% 20%;
+  --shadow-sm:0 1px 2px hsl(var(--shadow-color)/.06),0 1px 1px hsl(var(--shadow-color)/.04);
+  --shadow-md:0 4px 10px hsl(var(--shadow-color)/.08),0 1px 2px hsl(var(--shadow-color)/.06);
+  --shadow-lg:0 16px 32px hsl(var(--shadow-color)/.12),0 2px 6px hsl(var(--shadow-color)/.08);
+  --ease-out:cubic-bezier(.16,1,.3,1);
+
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-padding-top:env(safe-area-inset-top,0px);-webkit-text-size-adjust:100%}
+body{
+  margin:0;background:var(--surface-page);color:var(--text-primary);
+  font-family:var(--font-sans);font-size:var(--text-base);line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%}
+a{color:var(--green-700)}
+.pdt-num{font-family:var(--font-numeric);font-variant-numeric:tabular-nums;font-feature-settings:"tnum" 1}
+
+/* ============================================================
+   HUB — portada verde oscuro
+   ============================================================ */
+.pdt-hub{
+  min-height:100%;
+  background:
+    radial-gradient(1100px 620px at 86% -8%, rgba(201,226,101,.20), transparent 60%),
+    radial-gradient(900px 520px at 4% 14%, rgba(3,181,133,.34), transparent 62%),
+    radial-gradient(760px 540px at 64% 96%, rgba(186,244,233,.16), transparent 66%),
+    linear-gradient(152deg,#073E38 0%,#085E54 46%,#0A7568 100%);
+  color:var(--text-on-dark);
+  padding:var(--space-7) var(--space-5) var(--space-8);
+}
+.pdt-wrap{max-width:1180px;margin:0 auto}
+.pdt-hubtop{display:flex;justify-content:space-between;align-items:flex-start;gap:var(--space-5);flex-wrap:wrap}
+.pdt-brand{display:flex;flex-direction:column;gap:10px}
+.pdt-mark{width:168px;height:auto;color:var(--neutral-0);display:block}
+.pdt-claim{
+  font-size:var(--text-xs);letter-spacing:.14em;text-transform:uppercase;
+  color:var(--green-300);font-weight:600;
+}
+.pdt-meta{text-align:right;font-size:var(--text-xs);line-height:1.7;color:rgba(242,238,235,.72)}
+.pdt-meta strong{display:block;color:var(--neutral-0);font-size:var(--text-sm);font-weight:700}
+
+.pdt-eyebrow-hub{
+  margin-top:var(--space-8);font-size:var(--text-xs);letter-spacing:.16em;
+  text-transform:uppercase;color:var(--london-lime);font-weight:700;
+}
+.pdt-h1{
+  margin:var(--space-4) 0 0;font-size:clamp(32px,5.4vw,var(--text-3xl));
+  line-height:1.06;letter-spacing:-.025em;font-weight:800;max-width:19ch;
+}
+.pdt-h1 em{font-style:normal;color:var(--london-mint)}
+.pdt-lede-hub{
+  margin:var(--space-5) 0 0;max-width:62ch;font-size:var(--text-md);
+  line-height:1.55;color:rgba(242,238,235,.84);font-weight:400;
+}
+
+/* Tira de KPIs */
+.pdt-kpis{
+  display:grid;grid-template-columns:repeat(4,1fr);gap:var(--space-4);
+  margin-top:var(--space-7);
+}
+.pdt-kpi{
+  background:rgba(255,254,252,.07);border:1px solid var(--border-on-dark);
+  border-radius:var(--radius-lg);padding:var(--space-5);
+  display:flex;flex-direction:column;gap:6px;
+}
+.pdt-kpi-fig{
+  font-family:var(--font-numeric);font-variant-numeric:tabular-nums;
+  font-weight:300;font-size:clamp(34px,4.6vw,52px);line-height:1;
+  color:var(--neutral-0);letter-spacing:-.02em;
+}
+.pdt-kpi-fig sup{font-size:.4em;font-weight:600;vertical-align:super;margin-left:3px;color:var(--london-mint)}
+.pdt-kpi-lab{font-size:var(--text-sm);font-weight:600;color:var(--london-mint);line-height:1.35}
+.pdt-kpi-src{font-size:11px;color:rgba(242,238,235,.55);line-height:1.45;margin-top:auto;padding-top:6px}
+
+/* Índice de tarjetas */
+.pdt-ix-h{
+  margin:var(--space-8) 0 var(--space-4);font-size:var(--text-xs);
+  letter-spacing:.16em;text-transform:uppercase;color:var(--green-300);font-weight:700;
+}
+.pdt-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:var(--space-3)}
+.pdt-tile{
+  display:flex;flex-direction:column;gap:7px;text-align:left;
+  background:rgba(255,254,252,.055);border:1px solid var(--border-on-dark);
+  border-radius:var(--radius-md);padding:var(--space-5) var(--space-4);
+  color:var(--text-on-dark);font-family:inherit;font-size:var(--text-base);
+  cursor:pointer;transition:background 160ms var(--ease-out),border-color 160ms var(--ease-out),transform 160ms var(--ease-out);
+}
+.pdt-tile:hover{background:rgba(255,254,252,.11);border-color:rgba(186,244,233,.42);transform:translateY(-2px)}
+.pdt-tile:focus-visible{outline:2px solid var(--london-mint);outline-offset:3px}
+.pdt-tile-n{
+  font-family:var(--font-numeric);font-variant-numeric:tabular-nums;
+  font-size:var(--text-xs);font-weight:700;color:var(--london-lime);letter-spacing:.08em;
+}
+.pdt-tile-t{font-size:var(--text-base);font-weight:700;line-height:1.25;letter-spacing:-.01em}
+.pdt-tile-d{font-size:var(--text-xs);color:rgba(242,238,235,.66);line-height:1.5}
+.pdt-tile--cta{
+  grid-column:span 2;
+  background:linear-gradient(118deg,#03B585 0%,#0A7568 52%,#C9E265 190%);
+  border-color:rgba(201,226,101,.5);justify-content:center;
+}
+.pdt-tile--cta:hover{background:linear-gradient(118deg,#2FCB9E 0%,#0A7568 52%,#C9E265 190%)}
+.pdt-tile--cta .pdt-tile-n{color:#0B3B34}
+.pdt-tile--cta .pdt-tile-t{font-size:var(--text-md)}
+.pdt-tile--cta .pdt-tile-d{color:rgba(7,62,56,.82);font-weight:500}
+
+.pdt-hubfoot{
+  margin-top:var(--space-7);padding-top:var(--space-5);
+  border-top:1px solid var(--border-on-dark);
+  font-size:var(--text-xs);color:rgba(242,238,235,.55);line-height:1.6;
+}
+
+/* ============================================================
+   VISTAS DE SECCIÓN — fondo crema
+   ============================================================ */
+.pdt-view{display:none}
+.pdt-view.is-on{display:block}
+.pdt-hub[hidden]{display:none}
+
+.pdt-bar{
+  position:sticky;top:0;z-index:40;
+  padding-top:env(safe-area-inset-top,0px);
+  background:rgba(242,238,235,.94);backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--border-subtle);
+}
+.pdt-bar-in{
+  max-width:1180px;margin:0 auto;padding:var(--space-3) var(--space-5);
+  display:flex;align-items:center;gap:var(--space-4);
+}
+.pdt-btn{
+  font-family:inherit;font-size:var(--text-sm);font-weight:600;
+  border-radius:var(--radius-pill);border:1px solid var(--border-default);
+  background:var(--surface-card);color:var(--text-primary);
+  padding:7px 16px;cursor:pointer;white-space:nowrap;
+  transition:background 140ms var(--ease-out),border-color 140ms var(--ease-out),color 140ms;
+}
+.pdt-btn:hover{background:var(--green-100);border-color:var(--green-400);color:var(--green-800)}
+.pdt-btn:focus-visible{outline:2px solid var(--green-500);outline-offset:2px}
+.pdt-btn--solid{background:var(--green-600);border-color:var(--green-600);color:var(--neutral-0)}
+.pdt-btn--solid:hover{background:var(--green-700);border-color:var(--green-700);color:var(--neutral-0)}
+.pdt-bar-mid{flex:1;min-width:0;display:flex;align-items:baseline;gap:10px}
+.pdt-bar-n{font-family:var(--font-numeric);font-variant-numeric:tabular-nums;font-size:var(--text-xs);font-weight:700;color:var(--green-600)}
+.pdt-bar-t{font-size:var(--text-sm);font-weight:700;letter-spacing:-.01em;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.pdt-arrows{display:flex;gap:6px}
+.pdt-arrow{
+  width:34px;height:34px;border-radius:50%;border:1px solid var(--border-default);
+  background:var(--surface-card);cursor:pointer;color:var(--text-primary);
+  display:flex;align-items:center;justify-content:center;font-size:var(--text-sm);line-height:1;
+}
+.pdt-arrow:hover{background:var(--green-100);border-color:var(--green-400)}
+.pdt-arrow:disabled{opacity:.3;cursor:default}
+.pdt-arrow:focus-visible{outline:2px solid var(--green-500);outline-offset:2px}
+
+.pdt-sec{max-width:1180px;margin:0 auto;padding:var(--space-7) var(--space-5) var(--space-8)}
+.pdt-eyebrow{
+  font-family:var(--font-numeric);font-variant-numeric:tabular-nums;
+  font-size:var(--text-xs);letter-spacing:.16em;text-transform:uppercase;
+  color:var(--green-600);font-weight:700;
+}
+.pdt-h2{
+  margin:var(--space-3) 0 0;font-size:clamp(27px,3.9vw,var(--text-2xl));
+  line-height:1.1;letter-spacing:-.025em;font-weight:800;max-width:24ch;
+}
+.pdt-h2:focus{outline:none}
+.pdt-lede{margin:var(--space-4) 0 0;max-width:68ch;font-size:var(--text-md);line-height:1.55;color:var(--neutral-600)}
+.pdt-h3{margin:var(--space-7) 0 var(--space-4);font-size:var(--text-lg);line-height:1.2;letter-spacing:-.02em;font-weight:700}
+.pdt-h4{margin:0 0 var(--space-2);font-size:var(--text-base);font-weight:700;letter-spacing:-.01em}
+.pdt-p{margin:0 0 var(--space-4);max-width:72ch;line-height:1.65}
+.pdt-p:last-child{margin-bottom:0}
+.pdt-small{font-size:var(--text-sm);color:var(--text-secondary);line-height:1.55}
+.pdt-src{font-size:12px;color:var(--text-muted);line-height:1.5;margin-top:var(--space-2)}
+.pdt-block{margin-top:var(--space-6)}
+
+/* Card con pestaña */
+.pdt-tabcards{display:grid;grid-template-columns:repeat(2,1fr);gap:var(--space-5);margin-top:var(--space-6)}
+.pdt-tabcards--3{grid-template-columns:repeat(3,1fr)}
+.pdt-tabcard{position:relative;margin-top:26px;border-radius:var(--radius-md);padding:var(--space-5);box-shadow:var(--shadow-sm)}
+.pdt-tabcard::before{
+  content:attr(data-tab);position:absolute;top:-26px;left:0;
+  height:26px;display:inline-flex;align-items:center;padding:0 14px;
+  border-radius:var(--radius-sm) var(--radius-sm) 0 0;
+  font-family:var(--font-numeric);font-variant-numeric:tabular-nums;
+  font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;
+}
+.pdt-tc--fact{background:var(--surface-card);border:1px solid var(--border-subtle)}
+.pdt-tc--fact::before{background:var(--green-800);color:var(--neutral-0)}
+.pdt-tc--signal{background:var(--surface-card);border:1px solid var(--border-subtle)}
+.pdt-tc--signal::before{background:var(--london-mint);color:var(--green-900)}
+.pdt-tc--hyp{background:var(--green-100);border:1px solid var(--green-300)}
+.pdt-tc--hyp::before{background:var(--london-lime);color:var(--green-900)}
+.pdt-tc--impl{background:var(--green-800);border:1px solid var(--green-700);color:var(--london-cream)}
+.pdt-tc--impl::before{background:var(--london-mint);color:var(--green-900)}
+.pdt-tc--impl .pdt-small{color:rgba(242,238,235,.78)}
+.pdt-tc--impl .pdt-src{color:rgba(242,238,235,.52)}
+.pdt-tc--num{background:var(--surface-card);border:1px solid var(--border-subtle)}
+.pdt-tc--num::before{background:var(--green-600);color:var(--neutral-0)}
+
+/* Tiles de estadística */
+.pdt-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:var(--space-4);margin-top:var(--space-6)}
+.pdt-stats--3{grid-template-columns:repeat(3,1fr)}
+.pdt-stat{border-radius:var(--radius-md);padding:var(--space-5);display:flex;flex-direction:column;gap:6px;min-height:168px}
+.pdt-stat-f{font-family:var(--font-numeric);font-variant-numeric:tabular-nums;font-weight:300;font-size:clamp(32px,4.2vw,48px);line-height:1;letter-spacing:-.02em}
+.pdt-stat-f sup{font-size:.42em;font-weight:600;vertical-align:super;margin-left:2px}
+.pdt-stat-l{font-size:var(--text-sm);font-weight:600;line-height:1.35}
+.pdt-stat-s{font-size:11px;line-height:1.45;margin-top:auto;padding-top:8px;opacity:.72}
+.pdt-st--mint{background:var(--london-mint);color:var(--green-900)}
+.pdt-st--cream{background:var(--surface-card);color:var(--text-primary);border:1px solid var(--border-subtle)}
+.pdt-st--dark{background:var(--green-800);color:var(--london-cream)}
+.pdt-st--dark .pdt-stat-f{color:var(--neutral-0)}
+.pdt-st--lime{background:var(--london-lime);color:var(--green-900)}
+
+/* Barras píldora */
+.pdt-pills{display:flex;align-items:flex-end;gap:var(--space-5);height:240px;margin-top:var(--space-6);padding:0 var(--space-2)}
+.pdt-pill{flex:1;display:flex;flex-direction:column;align-items:center;gap:10px;height:100%;justify-content:flex-end}
+.pdt-pill-bar{
+  width:100%;max-width:74px;border-radius:var(--radius-pill) var(--radius-pill) 0 0;
+  background:linear-gradient(180deg,var(--london-lime) 0%,var(--london-green) 38%,var(--green-700) 100%);
+  position:relative;
+}
+.pdt-pill-bar--neg{background:linear-gradient(180deg,var(--neutral-300) 0%,var(--neutral-400) 100%)}
+.pdt-pill-v{
+  font-family:var(--font-numeric);font-variant-numeric:tabular-nums;
+  font-weight:300;font-size:var(--text-lg);line-height:1;letter-spacing:-.02em;
+}
+.pdt-pill-v sup{font-size:.45em;font-weight:600;vertical-align:super}
+.pdt-pill-l{font-size:12px;text-align:center;color:var(--text-secondary);line-height:1.35;max-width:14ch}
+
+/* Burbujas de posicionamiento */
+.pdt-bub{position:relative;margin-top:var(--space-6);background:var(--surface-card);border:1px solid var(--border-subtle);border-radius:var(--radius-lg);padding:var(--space-6)}
+.pdt-bub-plot{position:relative;height:430px;border-left:1px solid var(--border-default);border-bottom:1px solid var(--border-default)}
+.pdt-bub-x{text-align:center;font-size:12px;color:var(--text-secondary);margin-top:10px;letter-spacing:.04em}
+.pdt-bub-y{position:absolute;left:-10px;top:50%;transform:translateY(-50%) rotate(-90deg);transform-origin:left center;font-size:12px;color:var(--text-secondary);letter-spacing:.04em;white-space:nowrap}
+.pdt-bubble{
+  position:absolute;transform:translate(-50%,50%);border-radius:50%;
+  display:flex;align-items:center;justify-content:center;text-align:center;
+  font-size:12px;font-weight:700;line-height:1.15;padding:8px;
+  color:var(--green-900);
+}
+.pdt-bb-1{background:radial-gradient(circle at 32% 28%,#C9E265,#03B585 72%)}
+.pdt-bb-2{background:radial-gradient(circle at 32% 28%,#BAF4E9,#2FCB9E 74%)}
+.pdt-bb-3{background:radial-gradient(circle at 32% 28%,#7FE0C0,#039271 76%);color:#fff}
+.pdt-bb-4{background:radial-gradient(circle at 32% 28%,#BAF4E9,#0A7568 80%);color:#fff}
+.pdt-bb-5{background:radial-gradient(circle at 32% 28%,#DFF9F0,#085E54 82%);color:#fff}
+.pdt-bb-6{background:radial-gradient(circle at 32% 28%,#E9E3DC,#9A9086 80%);color:#fff}
+.pdt-caveat{
+  margin-top:var(--space-4);font-size:12px;color:var(--text-secondary);
+  background:var(--surface-sunken);border-left:3px solid var(--green-400);
+  padding:10px 14px;border-radius:0 var(--radius-sm) var(--radius-sm) 0;line-height:1.55;
+}
+
+/* Timeline */
+.pdt-tl{position:relative;margin-top:var(--space-6);padding-left:30px}
+.pdt-tl::before{content:"";position:absolute;left:7px;top:8px;bottom:8px;width:2px;background:linear-gradient(180deg,var(--green-300),var(--green-600),var(--green-800))}
+.pdt-tl-i{position:relative;padding:0 0 var(--space-5) 0}
+.pdt-tl-i::before{content:"";position:absolute;left:-30px;top:7px;width:16px;height:16px;border-radius:50%;background:var(--surface-page);border:3px solid var(--green-500)}
+.pdt-tl-i.is-key::before{background:var(--london-lime);border-color:var(--green-800);box-shadow:0 0 0 4px rgba(201,226,101,.26)}
+.pdt-tl-y{font-family:var(--font-numeric);font-variant-numeric:tabular-nums;font-size:var(--text-sm);font-weight:700;color:var(--green-700);letter-spacing:.04em}
+.pdt-tl-t{font-weight:700;margin:2px 0 3px;letter-spacing:-.01em}
+
+/* Área con degradado */
+.pdt-chart{margin-top:var(--space-6);background:var(--surface-card);border:1px solid var(--border-subtle);border-radius:var(--radius-lg);padding:var(--space-5)}
+.pdt-chart svg{display:block;width:100%;height:auto}
+
+/* Tablas */
+.pdt-tablewrap{margin-top:var(--space-6);overflow-x:auto;border:1px solid var(--border-subtle);border-radius:var(--radius-md);background:var(--surface-card);-webkit-overflow-scrolling:touch}
+table.pdt-table{border-collapse:collapse;width:100%;min-width:760px;font-size:var(--text-sm)}
+.pdt-table th,.pdt-table td{padding:12px 14px;text-align:left;vertical-align:top;border-bottom:1px solid var(--border-subtle);line-height:1.45}
+.pdt-table thead th{background:var(--green-800);color:var(--london-cream);font-weight:700;font-size:12px;letter-spacing:.06em;text-transform:uppercase;border-bottom:none;position:sticky;top:0}
+.pdt-table tbody tr:last-child td{border-bottom:none}
+.pdt-table tbody tr.is-focus{background:var(--green-100)}
+.pdt-table tbody tr.is-focus td:first-child{box-shadow:inset 3px 0 0 var(--green-600)}
+.pdt-na{color:var(--text-muted);font-style:italic}
+.pdt-scrollhint{font-size:12px;color:var(--text-muted);margin-top:8px}
+
+/* Cadenas de IA */
+.pdt-chain{background:var(--surface-card);border:1px solid var(--border-subtle);border-radius:var(--radius-md);padding:var(--space-5);margin-top:var(--space-5)}
+.pdt-chain--anchor{background:var(--green-800);border-color:var(--green-700);color:var(--london-cream)}
+.pdt-chain--anchor .pdt-chain-h{color:var(--neutral-0)}
+.pdt-chain--anchor .pdt-chain-step b{color:var(--london-mint)}
+.pdt-chain--anchor .pdt-chain-step{border-color:rgba(242,238,235,.2)}
+.pdt-chain--anchor .pdt-pre{background:rgba(255,254,252,.08);border-left-color:var(--london-lime);color:rgba(242,238,235,.84)}
+.pdt-chain-tag{display:inline-block;font-family:var(--font-numeric);font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;background:var(--london-lime);color:var(--green-900);padding:3px 10px;border-radius:var(--radius-pill);margin-bottom:10px}
+.pdt-chain-h{font-size:var(--text-md);font-weight:700;letter-spacing:-.015em;margin:0 0 4px}
+.pdt-chain-steps{display:grid;grid-template-columns:repeat(5,1fr);gap:0;margin-top:var(--space-4)}
+.pdt-chain-step{padding:12px 14px;border-left:2px solid var(--border-subtle);font-size:13px;line-height:1.45}
+.pdt-chain-step b{display:block;font-size:10px;letter-spacing:.11em;text-transform:uppercase;color:var(--green-600);margin-bottom:5px;font-weight:700}
+.pdt-pre{margin-top:var(--space-4);background:var(--surface-sunken);border-left:3px solid var(--green-500);padding:11px 14px;border-radius:0 var(--radius-sm) var(--radius-sm) 0;font-size:13px;line-height:1.55;color:var(--neutral-600)}
+
+/* Tarjetas de caso */
+.pdt-cases{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--space-4);margin-top:var(--space-5)}
+.pdt-case{background:var(--surface-card);border:1px solid var(--border-subtle);border-radius:var(--radius-md);padding:var(--space-5);display:flex;flex-direction:column}
+.pdt-case-n{font-size:var(--text-sm);font-weight:700;letter-spacing:-.01em}
+.pdt-case-s{font-size:12px;color:var(--text-secondary);margin-top:2px}
+.pdt-case-roi{font-family:var(--font-numeric);font-variant-numeric:tabular-nums;font-weight:300;font-size:46px;line-height:1;letter-spacing:-.03em;color:var(--green-700);margin:var(--space-4) 0 2px}
+.pdt-case-roi sup{font-size:.34em;font-weight:600;vertical-align:super;margin-left:3px;color:var(--text-secondary)}
+.pdt-case-roil{font-size:11px;letter-spacing:.09em;text-transform:uppercase;color:var(--text-muted);font-weight:700}
+.pdt-case ul{margin:var(--space-4) 0 0;padding-left:18px;font-size:13px;line-height:1.55;color:var(--neutral-600)}
+.pdt-case li{margin-bottom:5px}
+
+/* Fichas de hipótesis */
+.pdt-hyps{display:grid;grid-template-columns:repeat(2,1fr);gap:var(--space-5);margin-top:var(--space-6)}
+.pdt-hyp{background:var(--surface-card);border:1px solid var(--border-subtle);border-left:4px solid var(--green-500);border-radius:0 var(--radius-md) var(--radius-md) 0;padding:var(--space-5)}
+.pdt-hyp-n{font-family:var(--font-numeric);font-variant-numeric:tabular-nums;font-size:12px;font-weight:700;color:var(--green-600);letter-spacing:.1em}
+.pdt-hyp-t{font-weight:700;margin:6px 0 10px;line-height:1.3;letter-spacing:-.01em}
+.pdt-hyp dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:5px 12px;font-size:13px;line-height:1.5}
+.pdt-hyp dt{font-weight:700;color:var(--green-700);font-size:11px;letter-spacing:.07em;text-transform:uppercase;padding-top:2px}
+.pdt-hyp dd{margin:0;color:var(--neutral-600)}
+
+/* Inputs del prediagnóstico */
+.pdt-inputs{display:grid;grid-template-columns:repeat(2,1fr);gap:var(--space-4);margin-top:var(--space-6)}
+.pdt-input{background:var(--surface-card);border:1px solid var(--border-subtle);border-radius:var(--radius-md);padding:var(--space-5);display:flex;gap:var(--space-4)}
+.pdt-input-n{font-family:var(--font-numeric);font-variant-numeric:tabular-nums;font-weight:300;font-size:38px;line-height:.9;color:var(--green-400);flex:0 0 auto}
+.pdt-deliver{margin-top:var(--space-5);background:linear-gradient(118deg,#085E54 0%,#0A7568 58%,#039271 100%);color:var(--london-cream);border-radius:var(--radius-lg);padding:var(--space-6)}
+.pdt-deliver .pdt-h4{color:var(--neutral-0)}
+
+/* Radar / fases */
+.pdt-radar{display:grid;grid-template-columns:repeat(5,1fr);gap:var(--space-3);margin-top:var(--space-6)}
+.pdt-nmo{background:var(--surface-card);border:1px solid var(--border-subtle);border-radius:var(--radius-md);padding:var(--space-4);text-align:center}
+.pdt-nmo-n{font-family:var(--font-numeric);font-variant-numeric:tabular-nums;font-weight:300;font-size:32px;line-height:1;color:var(--green-500)}
+.pdt-nmo-t{font-weight:700;font-size:13px;margin:6px 0 4px}
+.pdt-nmo-d{font-size:11px;color:var(--text-secondary);line-height:1.4}
+
+/* Escenarios */
+.pdt-scn{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--space-4);margin-top:var(--space-6)}
+.pdt-scen{background:var(--surface-card);border:1px solid var(--border-subtle);border-top:4px solid var(--green-500);border-radius:0 0 var(--radius-md) var(--radius-md);padding:var(--space-5)}
+.pdt-scen--acc{border-top-color:var(--london-lime)}
+.pdt-scen--pre{border-top-color:#C0503F}
+.pdt-scen-k{font-size:11px;letter-spacing:.1em;text-transform:uppercase;font-weight:700;color:var(--text-muted)}
+.pdt-scen-mean{margin-top:var(--space-4);padding-top:var(--space-4);border-top:1px dashed var(--border-default);font-size:13px;line-height:1.55}
+.pdt-scen-mean b{display:block;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--green-600);margin-bottom:4px}
+
+/* Bifurcación */
+.pdt-fork{display:grid;grid-template-columns:repeat(2,1fr);gap:var(--space-5);margin-top:var(--space-6)}
+.pdt-forkcard{background:var(--surface-card);border:1px solid var(--border-subtle);border-radius:var(--radius-md);padding:var(--space-5)}
+.pdt-forkcard--b{background:var(--green-100);border-color:var(--green-300)}
+.pdt-forklabel{display:inline-block;font-family:var(--font-numeric);font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;background:var(--green-800);color:var(--neutral-0);padding:3px 10px;border-radius:var(--radius-pill);margin-bottom:10px}
+
+/* Fuentes */
+.pdt-srcs{margin-top:var(--space-5);display:grid;gap:10px}
+.pdt-srcrow{display:grid;grid-template-columns:150px 1fr;gap:var(--space-4);font-size:13px;padding-bottom:10px;border-bottom:1px solid var(--border-subtle);line-height:1.5}
+.pdt-srcrow b{color:var(--green-700);font-weight:700}
+.pdt-legend{display:grid;grid-template-columns:repeat(4,1fr);gap:var(--space-3);margin-top:var(--space-5)}
+.pdt-leg{border-radius:var(--radius-sm);padding:var(--space-4);font-size:12px;line-height:1.45}
+.pdt-leg b{display:block;font-size:11px;letter-spacing:.1em;text-transform:uppercase;margin-bottom:5px}
+.pdt-leg--f{background:var(--green-800);color:var(--london-cream)}
+.pdt-leg--s{background:var(--london-mint);color:var(--green-900)}
+.pdt-leg--h{background:var(--london-lime);color:var(--green-900)}
+.pdt-leg--i{background:var(--surface-card);border:1px solid var(--border-subtle)}
+
+.pdt-limits{margin-top:var(--space-6);background:var(--surface-card);border:1px solid var(--border-default);border-radius:var(--radius-md);padding:var(--space-6)}
+.pdt-limits ul{margin:var(--space-3) 0 0;padding-left:20px;line-height:1.65}
+.pdt-limits li{margin-bottom:9px}
+
+/* CTA */
+.pdt-ctapanel{
+  margin-top:var(--space-6);border-radius:var(--radius-xl);padding:var(--space-8) var(--space-6);
+  background:
+    radial-gradient(760px 420px at 88% 8%, rgba(201,226,101,.28), transparent 62%),
+    radial-gradient(620px 420px at 6% 92%, rgba(186,244,233,.22), transparent 64%),
+    linear-gradient(140deg,#073E38 0%,#085E54 48%,#0A7568 100%);
+  color:var(--text-on-dark);
+}
+.pdt-ctapanel .pdt-h2{max-width:20ch}
+.pdt-ctapanel .pdt-lede{color:rgba(242,238,235,.85)}
+.pdt-actions{display:flex;gap:var(--space-3);flex-wrap:wrap;margin-top:var(--space-6)}
+.pdt-cta-a{
+  display:inline-flex;align-items:center;gap:9px;text-decoration:none;
+  font-weight:700;font-size:var(--text-base);padding:14px 26px;border-radius:var(--radius-pill);
+  background:var(--london-lime);color:var(--green-900);border:1px solid var(--london-lime);
+  transition:transform 140ms var(--ease-out),background 140ms var(--ease-out);
+}
+.pdt-cta-a:hover{background:#D6EC85;transform:translateY(-1px)}
+.pdt-cta-a--ghost{background:transparent;color:var(--london-cream);border-color:var(--border-on-dark)}
+.pdt-cta-a--ghost:hover{background:rgba(255,254,252,.1)}
+.pdt-sign{
+  margin-top:var(--space-7);padding-top:var(--space-5);border-top:1px solid var(--border-on-dark);
+  display:flex;gap:var(--space-6);flex-wrap:wrap;font-size:var(--text-sm);line-height:1.65;
+}
+.pdt-sign b{display:block;font-size:var(--text-md);font-weight:700;color:var(--neutral-0);letter-spacing:-.01em}
+.pdt-sign a{color:var(--london-mint);text-decoration:none}
+.pdt-sign a:hover{text-decoration:underline}
+
+/* Pie de sección */
+.pdt-foot{
+  border-top:1px solid var(--border-subtle);margin-top:var(--space-8);
+  padding-top:var(--space-5);display:flex;justify-content:space-between;
+  align-items:center;gap:var(--space-4);flex-wrap:wrap;
+}
+.pdt-foot-next{font-size:12px;color:var(--text-muted);margin-bottom:3px}
+
+/* Transiciones */
+@media (prefers-reduced-motion:no-preference){
+  .pdt-view.is-on,.pdt-hub:not([hidden]){animation:pdtIn 200ms var(--ease-out) both}
+  @keyframes pdtIn{from{opacity:0;transform:translateY(7px)}to{opacity:1;transform:none}}
+}
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+@media (max-width:1000px){
+  .pdt-kpis{grid-template-columns:repeat(2,1fr)}
+  .pdt-grid{grid-template-columns:repeat(2,1fr)}
+  .pdt-stats,.pdt-stats--3{grid-template-columns:repeat(2,1fr)}
+  .pdt-cases,.pdt-scn{grid-template-columns:1fr}
+  .pdt-chain-steps{grid-template-columns:repeat(2,1fr)}
+  .pdt-radar{grid-template-columns:repeat(2,1fr)}
+  .pdt-legend{grid-template-columns:repeat(2,1fr)}
+}
+@media (max-width:720px){
+  .pdt-hub{padding:var(--space-6) var(--space-4) var(--space-7)}
+  .pdt-sec{padding:var(--space-6) var(--space-4) var(--space-7)}
+  .pdt-meta{text-align:left}
+  .pdt-kpis{grid-template-columns:1fr}
+  .pdt-grid{grid-template-columns:1fr}
+  .pdt-tile--cta{grid-column:span 1}
+  .pdt-tabcards,.pdt-tabcards--3,.pdt-hyps,.pdt-inputs,.pdt-fork{grid-template-columns:1fr}
+  .pdt-stats,.pdt-stats--3{grid-template-columns:1fr}
+  .pdt-chain-steps{grid-template-columns:1fr}
+  .pdt-chain-step{border-left:none;border-top:2px solid var(--border-subtle)}
+  .pdt-radar{grid-template-columns:1fr}
+  .pdt-srcrow{grid-template-columns:1fr;gap:3px}
+  .pdt-bar-t{display:none}
+  .pdt-bar-n{display:none}
+  .pdt-bub-plot{height:470px}
+  .pdt-bub-y{display:none}
+  .pdt-pills{height:200px;gap:var(--space-3)}
+  .pdt-legend{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+
+<!-- ============================================================
+     HUB
+     ============================================================ -->
+<section class="pdt-hub" id="pdt-hub" aria-label="Índice del análisis">
+  <div class="pdt-wrap">
+
+    <div class="pdt-hubtop">
+      <div class="pdt-brand">
+        <!-- Wordmark LONDON reconstruido en SVG inline a partir de las primitivas
+             geométricas del brandbook: triángulo · círculo · triángulo · semicírculo ·
+             círculo · triángulo. Escala sin pérdida y se recolorea con currentColor. -->
+        <svg class="pdt-mark" viewBox="0 0 232 38" role="img" aria-label="London Consulting Group" fill="currentColor">
+          <polygon points="0,0 28,0 0,38"/>
+          <circle cx="55" cy="19" r="19"/>
+          <polygon points="82,38 110,38 110,0"/>
+          <path d="M131 0 a19 19 0 0 1 0 38 z"/>
+          <circle cx="177" cy="19" r="19"/>
+          <polygon points="204,0 232,0 232,38"/>
+        </svg>
+        <div class="pdt-claim">Shape Your Business</div>
+      </div>
+      <div class="pdt-meta">
+        <strong>Preparado para Juan Ignacio Pérez</strong>
+        Director General · Productos de Trigo, S.A. de C.V.<br>
+        Guadalajara, Jalisco · Octubre de 2026<br>
+        Documento privado · no indexado
+      </div>
+    </div>
+
+    <div class="pdt-eyebrow-hub">Análisis de ejecución · Galletas Maribel</div>
+    <h1 class="pdt-h1">Tu propio sitio dice que la demanda supera la capacidad de planta. <em>Entonces el negocio ya no se decide vendiendo: se decide repartiendo horas de horno.</em></h1>
+    <p class="pdt-lede-hub">
+      Preparamos este análisis con fuentes públicas, sin acceso a tu información interna.
+      La tesis es específica: cuando la restricción es la capacidad, cada corrida es una decisión
+      de asignación entre economías que no comparten margen — marca Maribel, maquila a
+      transnacionales, marca privada de autoservicio, licencias, exportación y venta de gobierno.
+      El 1 de enero de 2027 esa hora de horno se vuelve legalmente más escasa.
+    </p>
+
+    <div class="pdt-kpis">
+      <div class="pdt-kpi">
+        <div class="pdt-kpi-fig">550<sup>+</sup></div>
+        <div class="pdt-kpi-lab">Personas en planta, administración y ventas</div>
+        <div class="pdt-kpi-src">prodetrigo.com, «Quiénes somos». La misma página declara «más de 600» en el apartado de historia: ver sección 13.</div>
+      </div>
+      <div class="pdt-kpi">
+        <div class="pdt-kpi-fig">4</div>
+        <div class="pdt-kpi-lab">Certificaciones declaradas: FSSC 22000, Sedex, Kosher y CTPAT en proceso</div>
+        <div class="pdt-kpi-src">prodetrigo.com, sección «Nuestras Certificaciones», consultado en octubre de 2026.</div>
+      </div>
+      <div class="pdt-kpi">
+        <div class="pdt-kpi-fig">20.5<sup>%</sup></div>
+        <div class="pdt-kpi-lab">Creció el gasto en marca propia en México de marzo 2025 a marzo 2026</div>
+        <div class="pdt-kpi-src">NielsenIQ, publicado en septiembre de 2026. Marcas comerciales: +6.4% en gasto y −1.7% en unidades.</div>
+      </div>
+      <div class="pdt-kpi">
+        <div class="pdt-kpi-fig">46<sup>h</sup></div>
+        <div class="pdt-kpi-lab">Jornada semanal máxima a partir del 1 de enero de 2027</div>
+        <div class="pdt-kpi-src">Reforma a la LFT, DOF 1 de mayo de 2026. Sin disminución de salarios ni prestaciones.</div>
+      </div>
+    </div>
+
+    <div class="pdt-ix-h">Trece secciones · dos minutos cada una</div>
+    <div class="pdt-grid" id="pdt-index"></div>
+
+    <div class="pdt-hubfoot">
+      Pieza de inteligencia comercial preparada por London Consulting Group México a partir
+      exclusivamente de fuentes públicas, sin acceso a información interna ni a cifras
+      financieras de Productos de Trigo. Las limitaciones de este método están declaradas
+      en la sección 13. Clasificación en cuatro niveles: HECHO · SEÑAL · HIPÓTESIS · IMPLICACIÓN.
+    </div>
+
+  </div>
+</section>
+
+<!-- ============================================================
+     VISTAS
+     ============================================================ -->
+<main id="pdt-views"></main>
+
+<template id="pdt-tpl">
+
+<!-- ============ 01 ============ -->
+<section class="pdt-view" data-id="tesis" data-n="01" data-t="La tesis">
+  <div class="pdt-sec">
+    <div class="pdt-eyebrow">01 · La tesis</div>
+    <h2 class="pdt-h2" tabindex="-1">La restricción no es la demanda. Es cómo se reparte la capacidad.</h2>
+    <p class="pdt-lede">
+      Antes de proponer nada, buscamos qué resuelve bien Productos de Trigo. Lo que encontramos
+      cambió el ángulo del análisis: la empresa ya hizo la parte difícil, y lo dice en su propio sitio.
+    </p>
+
+    <div class="pdt-block">
+      <p class="pdt-p">
+        En 2001, con la entrada de Grupo Oleomex en la administración, Productos de Trigo vendió el
+        molino de trigo, paró la fábrica de pasta y concentró el negocio en galleta. Según su propia
+        página corporativa, el volumen de ventas de galleta creció 100% en tres años. Después vinieron
+        las licencias y las maquilas a galleteras transnacionales y a marcas americanas, que —en sus
+        palabras— fortalecieron controles y calidad. Hoy sostiene FSSC 22000, Sedex y Kosher, con CTPAT
+        en proceso. Ese es el nivel de sistema de gestión que exige un cliente como Walmart o Bimbo.
+      </p>
+      <p class="pdt-p">
+        La misma página cierra ese párrafo con la frase que organiza todo este documento:
+        la demanda de sus galletas con valor <strong>supera la capacidad de planta</strong>.
+      </p>
+      <p class="pdt-p">
+        Cuando una empresa vende más de lo que puede producir, el cuello de botella ya no está en el
+        mercado ni en la calidad. Está en la asignación. Y una planta que atiende seis economías
+        distintas con los mismos hornos — marca propia, maquila a transnacionales, marca privada de
+        autoservicio, licencias, exportación y venta de gobierno — toma esa decisión todos los días,
+        varias veces al día.
+      </p>
+    </div>
+
+    <div class="pdt-tabcards" style="grid-template-columns:1fr">
+      <div class="pdt-tabcard pdt-tc--impl" data-tab="Core Business Hypothesis">
+        <h3 class="pdt-h4" style="font-size:var(--text-md);line-height:1.35;max-width:58ch">
+          Si la demanda supera la capacidad, el límite al crecimiento de Productos de Trigo no está en
+          vender más ni en producir mejor, sino en el criterio con el que se decide qué hornear:
+          hoy, con alta probabilidad, esa decisión se toma con información de volumen, servicio y
+          compromiso con el cliente, y no con contribución por hora de horno ocupada — y la toma,
+          en buena parte, una comercializadora que es otra empresa del grupo.
+        </h3>
+        <p class="pdt-small" style="margin-top:var(--space-4)">
+          La hipótesis es refutable. Si existe hoy un criterio formal de asignación de capacidad
+          basado en contribución por hora de horno, acordado entre planta y comercializadora,
+          y revisado con la periodicidad del ciclo comercial, la tesis está mal planteada y vale
+          la pena que nos lo digas: esa información también nos sirve.
+        </p>
+      </div>
+    </div>
+
+    <h3 class="pdt-h3">La restricción, dibujada</h3>
+    <div class="pdt-chart">
+      <svg viewBox="0 0 900 310" role="img" aria-labelledby="pdt-restr-t">
+        <title id="pdt-restr-t">Seis corrientes de demanda convergen sobre una capacidad de horno finita y producen seis márgenes distintos</title>
+        <defs>
+          <linearGradient id="gFunnel" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0%" stop-color="#BAF4E9"/><stop offset="55%" stop-color="#03B585"/><stop offset="100%" stop-color="#085E54"/>
+          </linearGradient>
+          <linearGradient id="gLime" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#C9E265"/><stop offset="100%" stop-color="#03B585"/>
+          </linearGradient>
+        </defs>
+        <text x="8" y="18" font-size="11" font-weight="700" letter-spacing="1.6" fill="#756C63">CORRIENTES DE DEMANDA</text>
+        <text x="372" y="18" font-size="11" font-weight="700" letter-spacing="1.6" fill="#756C63">RESTRICCIÓN</text>
+        <text x="648" y="18" font-size="11" font-weight="700" letter-spacing="1.6" fill="#756C63">RESULTADO</text>
+
+        <g font-size="13" fill="#3D3733">
+          <rect x="4" y="38" width="246" height="34" rx="17" fill="#FFFEFC" stroke="#DCD4C9"/><text x="22" y="60">Marca Maribel</text>
+          <rect x="4" y="80" width="246" height="34" rx="17" fill="#FFFEFC" stroke="#DCD4C9"/><text x="22" y="102">Maquila a galleteras transnacionales</text>
+          <rect x="4" y="122" width="246" height="34" rx="17" fill="#FFFEFC" stroke="#DCD4C9"/><text x="22" y="144">Marca privada de autoservicio</text>
+          <rect x="4" y="164" width="246" height="34" rx="17" fill="#FFFEFC" stroke="#DCD4C9"/><text x="22" y="186">Galletas con licencia</text>
+          <rect x="4" y="206" width="246" height="34" rx="17" fill="#FFFEFC" stroke="#DCD4C9"/><text x="22" y="228">Exportación</text>
+          <rect x="4" y="248" width="246" height="34" rx="17" fill="#FFFEFC" stroke="#DCD4C9"/><text x="22" y="270">Venta de gobierno</text>
+        </g>
+
+        <g stroke="#C2B8AB" stroke-width="1.5" fill="none">
+          <path d="M250 55 C 300 55, 320 150, 366 158"/>
+          <path d="M250 97 C 300 97, 322 150, 366 158"/>
+          <path d="M250 139 C 310 139, 330 152, 366 158"/>
+          <path d="M250 181 C 310 181, 330 164, 366 158"/>
+          <path d="M250 223 C 300 223, 322 166, 366 158"/>
+          <path d="M250 265 C 300 265, 320 166, 366 158"/>
+        </g>
+
+        <path d="M372 62 L 560 128 L 560 188 L 372 254 Z" fill="url(#gFunnel)"/>
+        <text x="466" y="146" text-anchor="middle" font-size="13" font-weight="800" fill="#073E38">CAPACIDAD</text>
+        <text x="466" y="166" text-anchor="middle" font-size="13" font-weight="800" fill="#073E38">DE PLANTA</text>
+        <text x="466" y="286" text-anchor="middle" font-size="11" fill="#756C63">Finita · y 4.2% más escasa el 1-ene-2027</text>
+
+        <g>
+          <rect x="600" y="52" width="292" height="92" rx="12" fill="#085E54"/>
+          <text x="620" y="82" font-size="13" font-weight="700" fill="#FFFEFC">Seis márgenes distintos</text>
+          <text x="620" y="105" font-size="12" fill="#BAF4E9">por la misma hora de horno</text>
+          <text x="620" y="127" font-size="12" fill="rgba(242,238,235,.7)">y por el mismo costo de conversión</text>
+
+          <rect x="600" y="158" width="292" height="118" rx="12" fill="#FFFEFC" stroke="#DCD4C9"/>
+          <text x="620" y="186" font-size="13" font-weight="700" fill="#272320">La pregunta operativa</text>
+          <text x="620" y="210" font-size="12" fill="#574F49">¿Con qué criterio se decide, un martes</text>
+          <text x="620" y="229" font-size="12" fill="#574F49">cualquiera, qué corrida entra primero</text>
+          <text x="620" y="248" font-size="12" fill="#574F49">cuando no caben todas?</text>
+          <rect x="620" y="258" width="60" height="4" rx="2" fill="url(#gLime)"/>
+        </g>
+      </svg>
+    </div>
+    <div class="pdt-caveat">
+      Esquema conceptual de la restricción, construido a partir de las corrientes de negocio
+      que la propia empresa y sus fichas públicas documentan. No representa volúmenes, proporciones
+      ni márgenes: no tenemos esa información y no la estimamos.
+    </div>
+  </div>
+</section>
+
+<!-- ============ 02 ============ -->
+<section class="pdt-view" data-id="hallazgos" data-n="02" data-t="Hallazgos">
+  <div class="pdt-sec">
+    <div class="pdt-eyebrow">02 · Hallazgos</div>
+    <h2 class="pdt-h2">Ocho hallazgos, cada uno con su fuente y su nivel de certeza</h2>
+    <p class="pdt-lede">
+      Separamos lo que está documentado de lo que es indicio. Nada de lo que sigue es una estimación nuestra.
+    </p>
+
+    <div class="pdt-tabcards">
+      <div class="pdt-tabcard pdt-tc--fact" data-tab="Hecho · 01">
+        <h3 class="pdt-h4">La demanda supera la capacidad de planta</h3>
+        <p class="pdt-small">Lo declara la página corporativa al describir el efecto de las licencias y las maquilas: galletas con valor que generan una demanda por encima de lo que la planta puede producir.</p>
+        <div class="pdt-src">prodetrigo.com/corporativo.html, apartado «Historia». Consultado en octubre de 2026.</div>
+      </div>
+      <div class="pdt-tabcard pdt-tc--fact" data-tab="Hecho · 02">
+        <h3 class="pdt-h4">Se maquila para clientes que también son competidores</h3>
+        <p class="pdt-small">La ficha pública de la empresa describe su actividad como fabricación de galletas Maribel más maquila a Bimbo, Soriana, OXXO y Walmart, entre otras. La página corporativa añade licencias y maquila a galleteras transnacionales y a marcas americanas.</p>
+        <div class="pdt-src">Ficha de empresa en cosmos.com.mx; prodetrigo.com/corporativo.html.</div>
+      </div>
+      <div class="pdt-tabcard pdt-tc--fact" data-tab="Hecho · 03">
+        <h3 class="pdt-h4">La comercialización vive fuera de la galletera</h3>
+        <p class="pdt-small">El perfil institucional en LinkedIn señala que la comercialización se maneja básicamente en forma directa por SUMMA, con excepción de las ventas de exportación y las de gobierno. La página corporativa habla del equipo de «la comercializadora del grupo».</p>
+        <div class="pdt-src">Perfil de Galletas Maribel en LinkedIn; prodetrigo.com/corporativo.html.</div>
+      </div>
+      <div class="pdt-tabcard pdt-tc--fact" data-tab="Hecho · 04">
+        <h3 class="pdt-h4">Sistema de inocuidad de nivel exportador</h3>
+        <p class="pdt-small">FSSC 22000 para gestión de inocuidad, Sedex para auditoría ética y social de cadena de suministro, Kosher, y CTPAT declarado en proceso — la certificación aduanal estadounidense de seguridad logística.</p>
+        <div class="pdt-src">prodetrigo.com, «Nuestras Certificaciones».</div>
+      </div>
+      <div class="pdt-tabcard pdt-tc--fact" data-tab="Hecho · 05">
+        <h3 class="pdt-h4">La empresa ya ejecutó una reconversión completa</h3>
+        <p class="pdt-small">Tras el incendio de mayo de 1990 y con la entrada de Grupo Oleomex en mayo de 2001: venta del molino de trigo a uno de los grupos más importantes de México, paro de la fábrica de pasta, y 100% de crecimiento en volumen de ventas de galleta en tres años.</p>
+        <div class="pdt-src">prodetrigo.com/corporativo.html, apartado «Historia».</div>
+      </div>
+      <div class="pdt-tabcard pdt-tc--signal" data-tab="Señal · 06">
+        <h3 class="pdt-h4">Avena Real: una salida del umbral calórico</h3>
+        <p class="pdt-small">El sitio de Maribel destaca un micrositio propio para Avena Real, y la línea aparece en retail como avena integral en hojuelas sin azúcar añadida. Es una categoría con un perfil nutrimental distinto al de la galleta dulce. Por sí sola no demuestra una estrategia de portafolio, pero apunta en una dirección.</p>
+        <div class="pdt-src">galletasmaribel.com.mx (carrusel de inicio); fichas de producto en retail en línea.</div>
+      </div>
+      <div class="pdt-tabcard pdt-tc--signal" data-tab="Señal · 07">
+        <h3 class="pdt-h4">Venta directa al consumidor, discreta</h3>
+        <p class="pdt-small">El sitio de marca enlaza a una tienda oficial en MercadoLibre. Es el único canal donde la galletera tiene relación directa con el consumidor final y, por lo tanto, el único donde ve el dato de venta sin intermediación.</p>
+        <div class="pdt-src">galletasmaribel.com.mx, enlace de carrito a tienda oficial.</div>
+      </div>
+      <div class="pdt-tabcard pdt-tc--signal" data-tab="Señal · 08">
+        <h3 class="pdt-h4">Las cifras públicas de la propia empresa no concuerdan entre sí</h3>
+        <p class="pdt-small">La plantilla aparece como «más de 550» y «más de 600» en dos apartados del mismo sitio, y como banda de 501 a 1,000 en LinkedIn. La fundación aparece como 1920 (La Occidental) en el sitio de marca y como 1896 en el perfil institucional. No construimos una tendencia con esto; lo reportamos como lo que es.</p>
+        <div class="pdt-src">prodetrigo.com; galletasmaribel.com.mx/historia.html; perfiles en LinkedIn.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 03 ============ -->
+<section class="pdt-view" data-id="mercado" data-n="03" data-t="El mercado cambió">
+  <div class="pdt-sec">
+    <div class="pdt-eyebrow">03 · El mercado cambió</div>
+    <h2 class="pdt-h2">El segmento que más crece es el que ustedes fabrican para otros</h2>
+    <p class="pdt-lede">
+      Entre marzo de 2025 y marzo de 2026 la marca propia de autoservicio creció veinte puntos más
+      que la marca comercial en gasto. Y en unidades, la marca comercial se contrajo.
+    </p>
+
+    <h3 class="pdt-h3">Marca propia contra marca comercial, variación anual</h3>
+    <div class="pdt-pills">
+      <div class="pdt-pill">
+        <div class="pdt-pill-v">+20.5<sup>%</sup></div>
+        <div class="pdt-pill-bar" style="height:76%"></div>
+        <div class="pdt-pill-l">Marca propia<br>gasto</div>
+      </div>
+      <div class="pdt-pill">
+        <div class="pdt-pill-v">+19.6<sup>%</sup></div>
+        <div class="pdt-pill-bar" style="height:73%"></div>
+        <div class="pdt-pill-l">Marca propia<br>unidades</div>
+      </div>
+      <div class="pdt-pill">
+        <div class="pdt-pill-v">+6.4<sup>%</sup></div>
+        <div class="pdt-pill-bar" style="height:24%"></div>
+        <div class="pdt-pill-l">Marca comercial<br>gasto</div>
+      </div>
+      <div class="pdt-pill">
+        <div class="pdt-pill-v">−1.7<sup>%</sup></div>
+        <div class="pdt-pill-bar pdt-pill-bar--neg" style="height:7%"></div>
+        <div class="pdt-pill-l">Marca comercial<br>unidades</div>
+      </div>
+    </div>
+    <div class="pdt-src">
+      NielsenIQ, variación de marzo de 2025 a marzo de 2026 frente al mismo periodo del año previo,
+      difundida en septiembre de 2026. Dato de categoría nacional, no específico de galletas.
+      La marca propia alcanzó 7% de participación nacional en valor, 0.4 puntos porcentuales más que el año anterior.
+    </div>
+
+    <div class="pdt-stats">
+      <div class="pdt-stat pdt-st--dark">
+        <div class="pdt-stat-f">1.67<sup>bn</sup></div>
+        <div class="pdt-stat-l">Pesos vendidos por las cadenas afiliadas a ANTAD en 2025</div>
+        <div class="pdt-stat-s">ANTAD, resultados 2025, febrero de 2026. +3.1% tiendas iguales, +5.6% tiendas totales.</div>
+      </div>
+      <div class="pdt-stat pdt-st--mint">
+        <div class="pdt-stat-f">1,700<sup>+</sup></div>
+        <div class="pdt-stat-l">Tiendas nuevas abiertas por cadenas ANTAD durante 2025</div>
+        <div class="pdt-stat-s">Principalmente formato especializado y de proximidad. Inversión del sector superior a 3,300 millones de dólares.</div>
+      </div>
+      <div class="pdt-stat pdt-st--cream">
+        <div class="pdt-stat-f">3.9<sup>%</sup></div>
+        <div class="pdt-stat-l">Crecimiento nominal proyectado por ANTAD para 2026 a tiendas iguales</div>
+        <div class="pdt-stat-s">6.3% a tiendas totales. Proyección publicada en febrero de 2026.</div>
+      </div>
+      <div class="pdt-stat pdt-st--lime">
+        <div class="pdt-stat-f">112<sup>M</sup></div>
+        <div class="pdt-stat-l">Dólares exportados por México en galleta dulce en abril de 2026</div>
+        <div class="pdt-stat-s">Contra 9.19 millones importados en el mismo mes. Data México, Secretaría de Economía.</div>
+      </div>
+    </div>
+
+    <h3 class="pdt-h3">Qué significa para Productos de Trigo</h3>
+    <p class="pdt-p">
+      Tres lecturas, ninguna obvia. La primera: la expansión del retail es en formatos pequeños y de
+      proximidad, lo que multiplica puntos de entrega y complica el servicio, pero también multiplica
+      el anaquel disponible para una marca de precio accesible. La segunda: el crecimiento de la marca
+      propia es demanda de maquila, y esa demanda llega a la misma planta que ya está llena.
+    </p>
+    <p class="pdt-p">
+      La tercera es la incómoda. Si la marca comercial pierde unidades mientras la marca propia las
+      gana, y tu planta sirve a las dos, entonces el mercado está desplazando volumen de tu economía
+      de mayor control de precio hacia tu economía de menor control de precio — y lo hace usando tu
+      propia capacidad. Esa transferencia es silenciosa: no aparece en el reporte de ventas, porque
+      las ventas suben en ambos casos. Aparece en el margen por hora de horno, que es justamente
+      el indicador que casi nadie tiene a la mano.
+    </p>
+  </div>
+</section>
+
+<!-- ============ 04 ============ -->
+<section class="pdt-view" data-id="compania" data-n="04" data-t="La compañía cambió">
+  <div class="pdt-sec">
+    <div class="pdt-eyebrow">04 · La compañía cambió</div>
+    <h2 class="pdt-h2">Una empresa que ya demostró que sabe reconvertirse</h2>
+    <p class="pdt-lede">
+      Este recorrido no es historia de cortesía. Es el inventario de lo que ya funciona,
+      y es la razón por la que la tesis de este documento no es «les falta método».
+    </p>
+
+    <div class="pdt-tl">
+      <div class="pdt-tl-i">
+        <div class="pdt-tl-y">1920</div>
+        <div class="pdt-tl-t">La Occidental</div>
+        <p class="pdt-small">Don Antonio Martínez García pasa de agricultor a la molienda de trigo. El grupo crece hacia harinas, galletas, pasta, almidón, fécula de maíz y glucosa.</p>
+      </div>
+      <div class="pdt-tl-i">
+        <div class="pdt-tl-y">1950</div>
+        <div class="pdt-tl-t">Cambio de nombre a Productos de Trigo</div>
+        <p class="pdt-small">Según el propio sitio, la empresa llegó a ser la tercera galletera más grande de México, con 2,200 toneladas mensuales promedio de galleta y hasta 900 de pasta. Es una afirmación de la compañía sobre su propia historia; no localizamos una fuente independiente que la respalde ni una fecha asociada a esas cifras.</p>
+      </div>
+      <div class="pdt-tl-i">
+        <div class="pdt-tl-y">1978</div>
+        <div class="pdt-tl-t">Concluye la sociedad con General Mills</div>
+        <p class="pdt-small">La familia Martínez recupera el control total de la fábrica. La sociedad había aportado formulaciones, productos y controles.</p>
+      </div>
+      <div class="pdt-tl-i is-key">
+        <div class="pdt-tl-y">Mayo de 1990</div>
+        <div class="pdt-tl-t">Incendio de la galletera</div>
+        <p class="pdt-small">Un incendio consume la planta. La propia narrativa corporativa lo describe como el punto donde se trunca la historia de éxito.</p>
+      </div>
+      <div class="pdt-tl-i is-key">
+        <div class="pdt-tl-y">Mayo de 2001</div>
+        <div class="pdt-tl-t">Entra Grupo Oleomex y se redefine el negocio</div>
+        <p class="pdt-small">Venta del molino de trigo, paro de la fábrica de pasta, reestructuración financiera y operativa, y 100% de crecimiento en volumen de ventas de galleta en tres años. La empresa se concentra en galleta de alto valor agregado.</p>
+      </div>
+      <div class="pdt-tl-i is-key">
+        <div class="pdt-tl-y">Después de 2001</div>
+        <div class="pdt-tl-t">Licencias, maquilas y certificación</div>
+        <p class="pdt-small">Incorporación de galletas con licencia y de maquilas a galleteras transnacionales y marcas americanas. Según la empresa, eso fortaleció sus controles y su calidad — y produjo la demanda que supera la capacidad de planta.</p>
+      </div>
+      <div class="pdt-tl-i">
+        <div class="pdt-tl-y">2023 · 2026</div>
+        <div class="pdt-tl-t">Marca, categoría y canal directo</div>
+        <p class="pdt-small">Sitio de marca Maribel con seis familias (Toscanas, Doraditas, Tapatías, Marías, Betunadas, Animalitos), micrositio propio para Avena Real, tienda oficial en MercadoLibre, presencia activa en redes y una página dedicada exclusivamente a reclutamiento.</p>
+      </div>
+    </div>
+
+    <h3 class="pdt-h3">Lo que la propia empresa dice que busca</h3>
+    <div class="pdt-tabcards">
+      <div class="pdt-tabcard pdt-tc--fact" data-tab="Textual · Misión">
+        <p class="pdt-small">En su perfil institucional, la misión está redactada en términos de satisfacer los mercados nacional e internacional de galletas «en condiciones óptimas de rentabilidad, productividad e innovación».</p>
+        <div class="pdt-src">Perfil de Productos de Trigo S.A. de C.V. en LinkedIn.</div>
+      </div>
+      <div class="pdt-tabcard pdt-tc--fact" data-tab="Textual · Visión">
+        <p class="pdt-small">La visión apunta a ser una empresa de nivel internacional «con sistemas de gestión consolidados» y de vanguardia dentro de la industria alimentaria en la fabricación de galletas.</p>
+        <div class="pdt-src">Perfil de Productos de Trigo S.A. de C.V. en LinkedIn.</div>
+      </div>
+      <div class="pdt-tabcard pdt-tc--impl" data-tab="Implicación">
+        <p class="pdt-small">Rentabilidad y productividad están nombradas antes que volumen. Y «sistemas de gestión consolidados» es el lenguaje de alguien que ya pasó por auditorías y sabe la diferencia entre tener un procedimiento y tener un sistema. La conversación que propone este documento es la continuación natural de ese enunciado, no una corrección de rumbo.</p>
+      </div>
+      <div class="pdt-tabcard pdt-tc--signal" data-tab="Señal">
+        <p class="pdt-small">No localizamos entrevistas, declaraciones en prensa ni participaciones públicas de la dirección general en los últimos 36 meses. Es una empresa de perfil mediático deliberadamente bajo. Esa ausencia limita lo que podemos leer sobre prioridades declaradas, y lo decimos en vez de rellenarlo.</p>
+        <div class="pdt-src">Búsqueda en medios de negocios y prensa de Jalisco, octubre de 2026.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 05 ============ -->
+<section class="pdt-view" data-id="economias" data-n="05" data-t="Seis economías, una planta">
+  <div class="pdt-sec">
+    <div class="pdt-eyebrow">05 · Portafolio y canal</div>
+    <h2 class="pdt-h2">Seis economías conviviendo en los mismos hornos</h2>
+    <p class="pdt-lede">
+      No son seis clientes. Son seis modelos de negocio con dueños comerciales distintos, estructuras
+      de precio distintas y exposición fiscal distinta, compitiendo por el mismo recurso escaso.
+    </p>
+
+    <div class="pdt-bub">
+      <div class="pdt-bub-y">Control sobre el precio al consumidor →</div>
+      <div class="pdt-bub-plot">
+        <div class="pdt-bubble pdt-bb-1" style="width:120px;height:120px;left:17%;bottom:70%">Marca<br>Maribel</div>
+        <div class="pdt-bubble pdt-bb-2" style="width:104px;height:104px;left:46%;bottom:60%">Galletas con<br>licencia</div>
+        <div class="pdt-bubble pdt-bb-3" style="width:96px;height:96px;left:29%;bottom:36%">Exportación</div>
+        <div class="pdt-bubble pdt-bb-4" style="width:114px;height:114px;left:79%;bottom:24%">Maquila a<br>transnacionales</div>
+        <div class="pdt-bubble pdt-bb-5" style="width:120px;height:120px;left:60%;bottom:10%">Marca privada<br>de autoservicio</div>
+        <div class="pdt-bubble pdt-bb-6" style="width:88px;height:88px;left:13%;bottom:15%">Venta de<br>gobierno</div>
+      </div>
+      <div class="pdt-bub-x">Previsibilidad del volumen comprometido →</div>
+    </div>
+    <div class="pdt-caveat">
+      Ubicación cualitativa derivada de las variables de este análisis — no es un scoring numérico
+      ni refleja participación, volumen ni rentabilidad. El tamaño de cada burbuja es ilustrativo
+      y no representa magnitud: no disponemos de la mezcla real y no la estimamos.
+    </div>
+
+    <h3 class="pdt-h3">Por qué cada una se comporta distinto</h3>
+    <div class="pdt-tablewrap">
+      <table class="pdt-table">
+        <thead>
+          <tr>
+            <th>Economía</th>
+            <th>Quién define el precio al consumidor</th>
+            <th>Quién controla la demanda</th>
+            <th>Exposición al IEPS por densidad calórica</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="is-focus">
+            <td><strong>Marca Maribel</strong></td>
+            <td>Productos de Trigo, dentro del margen que permite el canal</td>
+            <td>SUMMA, comercializadora del grupo</td>
+            <td>Directa: el impuesto recae sobre la enajenación del producto gravado</td>
+          </tr>
+          <tr>
+            <td><strong>Maquila a transnacionales</strong></td>
+            <td>El cliente dueño de la marca</td>
+            <td>El cliente</td>
+            <td>Depende del esquema contractual de enajenación. <span class="pdt-na">Información pública no identificada.</span></td>
+          </tr>
+          <tr>
+            <td><strong>Marca privada de autoservicio</strong></td>
+            <td>La cadena</td>
+            <td>La cadena</td>
+            <td>Depende del esquema contractual de enajenación. <span class="pdt-na">Información pública no identificada.</span></td>
+          </tr>
+          <tr>
+            <td><strong>Galletas con licencia</strong></td>
+            <td>Productos de Trigo, con regalía comprometida al licenciante</td>
+            <td>Mixto</td>
+            <td>Directa</td>
+          </tr>
+          <tr>
+            <td><strong>Exportación</strong></td>
+            <td>El distribuidor en destino</td>
+            <td>Productos de Trigo directamente, no SUMMA</td>
+            <td>No aplica el IEPS nacional a la exportación; aplica la normativa de destino</td>
+          </tr>
+          <tr>
+            <td><strong>Venta de gobierno</strong></td>
+            <td>Licitación o convenio</td>
+            <td>Productos de Trigo directamente, no SUMMA</td>
+            <td>Sujeta además a criterios nutrimentales de los programas públicos</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="pdt-scrollhint">Desliza la tabla horizontalmente para ver todas las columnas.</div>
+    <div class="pdt-src">
+      Elaboración propia a partir del perfil institucional en LinkedIn (reparto SUMMA / exportación / gobierno),
+      de la ficha de actividad de la empresa y de la Ley del IEPS, artículo 2, fracción I, inciso J.
+      Las celdas marcadas no se completan: el tratamiento fiscal de un esquema de maquila depende del
+      contrato y no es información pública.
+    </div>
+
+    <h3 class="pdt-h3">La consecuencia</h3>
+    <p class="pdt-p">
+      Dos de las seis economías las comercializa directamente la galletera — exportación y gobierno —
+      y cuatro no. Eso significa que la empresa que decide qué se vende no es siempre la empresa que
+      paga el costo de producirlo, y que la señal de «qué conviene hornear» viaja entre dos
+      organizaciones antes de llegar a programación. En una planta con capacidad sobrante eso es
+      administrable. En una planta llena, es el punto exacto donde se pierde margen sin que nadie
+      cometa un error.
+    </p>
+  </div>
+</section>
+
+<!-- ============ 06 ============ -->
+<section class="pdt-view" data-id="benchmark" data-n="06" data-t="Benchmark">
+  <div class="pdt-sec">
+    <div class="pdt-eyebrow">06 · Benchmark competitivo</div>
+    <h2 class="pdt-h2">Primero las variables; después las empresas</h2>
+    <p class="pdt-lede">
+      No comparamos tamaño ni portafolio, porque no es lo que está en juego. Comparamos quién controla
+      la demanda y cuánta capacidad propia se dedica a marcas que no son propias.
+    </p>
+
+    <h3 class="pdt-h3">Las cuatro variables, derivadas del reto</h3>
+    <div class="pdt-tabcards" style="grid-template-columns:repeat(4,1fr)">
+      <div class="pdt-tabcard pdt-tc--num" data-tab="V1"><p class="pdt-small"><strong>Control de la demanda.</strong> ¿La fabricante decide a quién le vende y a qué precio, o lo decide un tercero?</p></div>
+      <div class="pdt-tabcard pdt-tc--num" data-tab="V2"><p class="pdt-small"><strong>Capacidad cedida a terceros.</strong> ¿Qué tanto de la planta trabaja para marcas ajenas?</p></div>
+      <div class="pdt-tabcard pdt-tc--num" data-tab="V3"><p class="pdt-small"><strong>Huella industrial.</strong> ¿Una planta o varias? ¿Hay a dónde mover una corrida cuando no cabe?</p></div>
+      <div class="pdt-tabcard pdt-tc--num" data-tab="V4"><p class="pdt-small"><strong>Integración de insumos.</strong> ¿El costo de la grasa y la harina se negocia afuera o se resuelve adentro del grupo?</p></div>
+    </div>
+
+    <div class="pdt-tablewrap">
+      <table class="pdt-table">
+        <thead>
+          <tr>
+            <th>Compañía</th>
+            <th>V1 · Control de la demanda</th>
+            <th>V2 · Capacidad a marcas de terceros</th>
+            <th>V3 · Huella industrial</th>
+            <th>V4 · Integración de insumos</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="is-focus">
+            <td><strong>Productos de Trigo</strong><br><span class="pdt-small">Galletas Maribel</span></td>
+            <td>Parcial: SUMMA comercializa, salvo exportación y gobierno</td>
+            <td>Alta y declarada: maquila y licencias como motor de crecimiento</td>
+            <td>Una planta principal en Guadalajara</td>
+            <td>Dentro de Grupo Oleomex: IMASA procesa aceites, grasas, margarinas e hidrogenados</td>
+          </tr>
+          <tr>
+            <td><strong>Gamesa</strong><br><span class="pdt-small">PepsiCo México</span></td>
+            <td>Total, con red de distribución propia de alcance nacional</td>
+            <td><span class="pdt-na">Información pública no identificada.</span></td>
+            <td>Múltiples plantas en México</td>
+            <td>Escala corporativa de compra global</td>
+          </tr>
+          <tr>
+            <td><strong>Cuétara México</strong><br><span class="pdt-small">Independiente de Cuétara España desde 1989</span></td>
+            <td>Total, marca propia</td>
+            <td><span class="pdt-na">Información pública no identificada.</span></td>
+            <td>Tres plantas declaradas: Vallejo, Veracruz y García, N.L., más centro de distribución para el norte y Estados Unidos</td>
+            <td><span class="pdt-na">Información pública no identificada.</span></td>
+          </tr>
+          <tr>
+            <td><strong>Marinela</strong><br><span class="pdt-small">Grupo Bimbo</span></td>
+            <td>Total, con distribución directa a detalle</td>
+            <td>Compra maquila a terceros, entre ellos Productos de Trigo</td>
+            <td>Red industrial multinacional</td>
+            <td>Escala corporativa</td>
+          </tr>
+          <tr>
+            <td><strong>Dondé</strong><br><span class="pdt-small">Productos de Harina, Mérida</span></td>
+            <td>Marca propia regional en segmento de valor</td>
+            <td><span class="pdt-na">Información pública no identificada.</span></td>
+            <td><span class="pdt-na">Información pública no identificada.</span></td>
+            <td><span class="pdt-na">Información pública no identificada.</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="pdt-scrollhint">Desliza la tabla horizontalmente para ver todas las columnas.</div>
+    <div class="pdt-src">
+      Fuentes: sitios corporativos de cada compañía, fichas públicas de empresa y notas de prensa
+      sectorial, consultadas en octubre de 2026. Las celdas sin dato se dejan vacías a propósito:
+      la mezcla de capacidad dedicada a marcas de terceros no es información que las galleteras publiquen.
+      Ninguno de los casos de éxito citados en este documento compite con Productos de Trigo en galleta,
+      por lo que no hubo exclusiones que declarar en esta tabla.
+    </div>
+
+    <h3 class="pdt-h3">Qué dice la comparación</h3>
+    <p class="pdt-p">
+      Productos de Trigo es la única de las cinco cuya demanda la administra una empresa distinta de
+      la que fabrica, y la única con una sola planta principal. Las dos cosas juntas son relevantes:
+      con varias plantas, un conflicto de capacidad se resuelve moviendo la corrida; con una sola,
+      se resuelve eligiendo — es decir, dejando algo fuera.
+    </p>
+    <p class="pdt-p">
+      La contrapartida es una ventaja que ninguna de las otras tiene en la misma forma. La grasa
+      vegetal es el segundo insumo de una galleta y es el más volátil, y dentro de Grupo Oleomex hay
+      una empresa que procesa y distribuye aceites, grasas, margarinas e hidrogenados para la industria
+      alimentaria nacional. Esa integración puede ser una palanca real de costo y de abasto, o puede
+      ser simplemente un proveedor más con una factura intragrupo. Cuál de las dos es, no se puede
+      saber desde afuera — y es una de las preguntas que vale la pena abrir.
+    </p>
+  </div>
+</section>
+
+<!-- ============ 07 ============ -->
+<section class="pdt-view" data-id="forzadores" data-n="07" data-t="Forzadores con fecha">
+  <div class="pdt-sec">
+    <div class="pdt-eyebrow">07 · Forzadores y outlook</div>
+    <h2 class="pdt-h2">Dos cambios con fecha publicada y uno que todavía no es un hecho</h2>
+    <p class="pdt-lede">
+      Distinguimos con cuidado entre lo que ya está en el Diario Oficial y lo que está en discusión
+      legislativa. Confundir las dos cosas es la forma más rápida de perder credibilidad con alguien
+      que vive del tema.
+    </p>
+
+    <div class="pdt-tabcards pdt-tabcards--3">
+      <div class="pdt-tabcard pdt-tc--fact" data-tab="Hecho · vigente">
+        <h3 class="pdt-h4">Salario mínimo: +13% el 1 de enero de 2026</h3>
+        <p class="pdt-small">En la zona general —a la que pertenece Jalisco— el salario mínimo pasó de $278.80 a $315.04 diarios. El incremento se integra por un monto independiente de recuperación de $17.01 y una fijación de 6.5%. En la Zona Libre de la Frontera Norte el aumento fue de 5%, a $440.87.</p>
+        <div class="pdt-src">Resolución de la CONASAMI publicada en el DOF el 9 de diciembre de 2025, vigente desde el 1 de enero de 2026.</div>
+      </div>
+      <div class="pdt-tabcard pdt-tc--fact" data-tab="Hecho · con fecha">
+        <h3 class="pdt-h4">Jornada: 46 horas el 1 de enero de 2027</h3>
+        <p class="pdt-small">La reforma se consolidó en dos decretos: el del 3 de marzo de 2026 al artículo 123 constitucional, y el del 1 de mayo de 2026 a la Ley Federal del Trabajo. El calendario es 48 horas en 2026, 46 en 2027, 44 en 2028, 42 en 2029 y 40 en 2030, sin disminución de salarios ni prestaciones. Se suma la obligación de registro electrónico de jornada por persona trabajadora.</p>
+        <div class="pdt-src">DOF, 3 de marzo y 1 de mayo de 2026. Transitorio segundo del decreto de reforma a la LFT.</div>
+      </div>
+      <div class="pdt-tabcard pdt-tc--signal" data-tab="Señal · no aprobado">
+        <h3 class="pdt-h4">IEPS: la tasa no subió, pero está en la mesa</h3>
+        <p class="pdt-small">El IEPS de 8% a alimentos no básicos con densidad calórica igual o mayor a 275 kcal por 100 gramos rige desde 2014 y alcanza a las galletas — no es un cambio reciente. La iniciativa de Ley de Ingresos 2027, entregada el 8 de septiembre de 2026, no contempla aumentarlo. Lo que sí existe es una propuesta de organizaciones civiles para llevarlo de 8% a 20%, que la Comisión de Hacienda ha calificado de técnicamente viable. No está aprobada.</p>
+        <div class="pdt-src">Ley del IEPS, art. 2 fr. I inciso J; criterio normativo 5/IEPS/N del SAT; cobertura de prensa del Paquete Económico 2027, septiembre de 2026.</div>
+      </div>
+    </div>
+
+    <h3 class="pdt-h3">La aritmética incómoda</h3>
+    <p class="pdt-p">
+      Pongámoslo en términos de la restricción. Durante 2026 la nómina de una planta intensiva en mano
+      de obra absorbió un alza de 13% en el piso salarial. El 1 de enero de 2027, el máximo legal de
+      horas ordinarias por persona baja de 48 a 46 — una reducción de 4.2% en horas disponibles — y
+      por mandato expreso no puede acompañarse de una reducción de salario. Las horas extra siguen
+      topadas en nueve a la semana y se pagan con 100% adicional.
+    </p>
+    <p class="pdt-p">
+      Para una empresa con capacidad ociosa, esto es un tema de costo laboral que se gestiona con
+      productividad. Para una empresa cuya demanda ya supera su capacidad, es otra cosa: el recurso
+      escaso se vuelve más escaso y más caro al mismo tiempo. La pregunta deja de ser «cómo producimos
+      más barato» y pasa a ser «de todo lo que podríamos hornear, qué dejamos de hornear» — y esa
+      pregunta no se responde con un indicador de eficiencia, se responde con uno de contribución.
+    </p>
+
+    <h3 class="pdt-h3">Outlook 2026 – 2029</h3>
+    <div class="pdt-scn">
+      <div class="pdt-scen">
+        <div class="pdt-scen-k">Base</div>
+        <h4 class="pdt-h4" style="margin-top:8px">Continuidad</h4>
+        <p class="pdt-small">La marca propia sigue ganando participación a un dígito alto; el retail sigue abriendo formatos pequeños; la jornada baja según calendario y el IEPS se mantiene en 8%. El costo laboral por hora disponible sube de forma predecible cada 1 de enero.</p>
+        <div class="pdt-scen-mean"><b>Qué podría significar para Productos de Trigo</b>La competencia por la hora de horno se intensifica sin sobresaltos. Gana quien tenga antes el criterio de asignación, no quien tenga más capacidad.</div>
+      </div>
+      <div class="pdt-scen pdt-scen--acc">
+        <div class="pdt-scen-k">Aceleración</div>
+        <h4 class="pdt-h4" style="margin-top:8px">Inversión y exportación</h4>
+        <p class="pdt-small">México mantiene un superávit amplio en galleta dulce y el CTPAT declarado en proceso se concreta, abriendo con más holgura el mercado estadounidense. Las cadenas profundizan sus programas de marca propia y buscan maquiladores certificados.</p>
+        <div class="pdt-scen-mean"><b>Qué podría significar para Productos de Trigo</b>Más demanda de la que ya no cabe. Sin un criterio de asignación, crecer en una economía significa, inevitablemente, encoger en otra sin haberlo decidido.</div>
+      </div>
+      <div class="pdt-scen pdt-scen--pre">
+        <div class="pdt-scen-k">Presión</div>
+        <h4 class="pdt-h4" style="margin-top:8px">Fiscal y de costos</h4>
+        <p class="pdt-small">Prospera la propuesta de llevar el IEPS de 8% a 20% en alimentos de alta densidad calórica, o se incorporan criterios por sodio. Los insumos agrícolas y las grasas se encarecen. El consumidor se vuelve más sensible al precio.</p>
+        <div class="pdt-scen-mean"><b>Qué podría significar para Productos de Trigo</b>La economía de marca propia —donde el precio lo fija la empresa y el impuesto golpea directo— se vuelve relativamente menos atractiva que la maquila. La mezcla óptima se mueve, y quien no la esté midiendo se entera tarde.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 08 ============ -->
+<section class="pdt-view" data-id="implicaciones" data-n="08" data-t="Implicaciones de ejecución">
+  <div class="pdt-sec">
+    <div class="pdt-eyebrow">08 · Implicaciones de ejecución</div>
+    <h2 class="pdt-h2">Cinco consecuencias prácticas de operar lleno</h2>
+    <p class="pdt-lede">
+      Ninguna de estas afirma que algo esté mal. Son los puntos donde, en plantas con esta estructura,
+      el dinero se pierde sin que nadie se equivoque.
+    </p>
+
+    <div class="pdt-tabcards">
+      <div class="pdt-tabcard pdt-tc--num" data-tab="Implicación · 01">
+        <h3 class="pdt-h4">El costeo por producto deja de ser suficiente</h3>
+        <p class="pdt-small">Cuando sobra capacidad, el margen por kilo es una buena guía. Cuando falta, la guía correcta es el margen por hora de horno, que penaliza las corridas lentas, los cambios de formato largos y los lotes chicos — y que puede invertir por completo el orden de atractivo de un portafolio respecto al costeo tradicional.</p>
+      </div>
+      <div class="pdt-tabcard pdt-tc--num" data-tab="Implicación · 02">
+        <h3 class="pdt-h4">El cambio de formato se vuelve el costo invisible más grande</h3>
+        <p class="pdt-small">Seis economías, seis familias de marca propia y un portafolio de maquila con especificaciones ajenas implican secuencias largas de limpieza, ajuste y arranque. En una planta llena, cada minuto de cambio es producto que no se hizo y que no va a recuperarse después, porque no hay «después».</p>
+      </div>
+      <div class="pdt-tabcard pdt-tc--num" data-tab="Implicación · 03">
+        <h3 class="pdt-h4">La señal comercial cruza una frontera societaria</h3>
+        <p class="pdt-small">SUMMA comercializa; Productos de Trigo fabrica; exportación y gobierno van directo. Para que la planta programe con criterio de rentabilidad necesita una señal de demanda que hoy se origina en otra empresa, con sus propios objetivos e incentivos. Eso no es un defecto de nadie: es una característica estructural que hay que diseñar explícitamente.</p>
+      </div>
+      <div class="pdt-tabcard pdt-tc--num" data-tab="Implicación · 04">
+        <h3 class="pdt-h4">El registro electrónico de jornada toca la capa de datos de piso</h3>
+        <p class="pdt-small">La obligación de registrar electrónicamente la jornada de cada persona no es sólo un tema de cumplimiento para Capital Humano. Es, por primera vez, un dato por persona, por turno y por día que existe de forma estructurada — exactamente la materia prima que falta para calcular costo real por corrida.</p>
+      </div>
+      <div class="pdt-tabcard pdt-tc--num" data-tab="Implicación · 05" style="grid-column:1/-1">
+        <h3 class="pdt-h4">La calidad ya no se audita sólo hacia adentro</h3>
+        <p class="pdt-small">Al maquilar para transnacionales y cadenas, el sistema de inocuidad de Productos de Trigo responde simultáneamente a varios auditores externos y al consumidor de marca propia. Un desvío de calidad en una corrida de maquila tiene consecuencias comerciales de otro orden que un desvío en marca propia. Encontramos reseñas públicas de consumidores reportando defectos en producto y afirmando no haber recibido respuesta por los canales de contacto; son casos individuales y no permiten concluir nada sobre el desempeño del sistema, pero sí muestran que el ciclo de atención al consumidor termina siendo visible para cualquiera que busque la marca.</p>
+        <div class="pdt-src">Reseñas públicas de Google asociadas a la ficha de la empresa, consultadas en octubre de 2026. Se citan como señal de visibilidad del canal de atención, no como evidencia de desempeño de calidad.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 09 ============ -->
+<section class="pdt-view" data-id="ia" data-n="09" data-t="IA y agentes">
+  <div class="pdt-sec">
+    <div class="pdt-eyebrow">09 · IA y agentes</div>
+    <h2 class="pdt-h2">Cuatro agentes, empezando por el único que ordena a los demás</h2>
+    <p class="pdt-lede">
+      La fórmula no se toca y el oficio de hornear tampoco: setenta y seis años de recetas y de gente
+      con tres décadas en la misma planta no se automatizan ni conviene intentarlo. Lo que sí se puede
+      automatizar es la decisión de <em>qué</em> hornear y <em>en qué orden</em>, que hoy se toma con
+      información dispersa y bajo presión de tiempo.
+    </p>
+
+    <div class="pdt-chain pdt-chain--anchor">
+      <span class="pdt-chain-tag">Agente ancla</span>
+      <h3 class="pdt-chain-h">Atribución de rentabilidad transversal</h3>
+      <p class="pdt-small" style="max-width:70ch">
+        Es el fundamento de los otros tres, no uno más de la lista. Mientras marca propia, maquila,
+        marca privada, licencia, exportación y gobierno no se midan en una misma unidad —contribución
+        por hora de horno ocupada— cualquier otra automatización optimiza dentro de un marco equivocado.
+      </p>
+      <div class="pdt-chain-steps">
+        <div class="pdt-chain-step"><b>Proceso</b>Cierre de costos y evaluación de rentabilidad por línea de negocio</div>
+        <div class="pdt-chain-step"><b>Fricción</b>Cada economía se reporta con una lógica distinta y ninguna se expresa por hora de capacidad</div>
+        <div class="pdt-chain-step"><b>Agente</b>Normaliza costo de fórmula, conversión, empaque, cambio de formato y merma a una unidad común</div>
+        <div class="pdt-chain-step"><b>Acción</b>Ordena el portafolio completo por contribución por hora y marca los cruces de umbral</div>
+        <div class="pdt-chain-step"><b>Resultado</b>Una sola tabla con la que planta y comercializadora pueden discutir la misma pregunta</div>
+      </div>
+      <div class="pdt-pre"><strong>Condición previa de datos:</strong> catálogo único de SKU conciliado entre planta y comercializadora, tiempos estándar por corrida y formato, costo de fórmula actualizado y órdenes de producción con hora de inicio y fin. Si el catálogo no concilia, el agente produce una tabla elegante y equivocada. Normalmente es aquí donde se rompe, y decirlo vale más que prometer un resultado.</div>
+    </div>
+
+    <div class="pdt-chain">
+      <h3 class="pdt-chain-h">Asignación y secuenciación de capacidad</h3>
+      <div class="pdt-chain-steps">
+        <div class="pdt-chain-step"><b>Proceso</b>Programación semanal de líneas y hornos</div>
+        <div class="pdt-chain-step"><b>Fricción</b>Compromisos de maquila con fecha fija compiten con reposición de marca propia; el costo de cambio de formato no entra en la decisión</div>
+        <div class="pdt-chain-step"><b>Agente</b>Simula secuencias alternativas con restricciones reales de limpieza, alérgenos y arranque</div>
+        <div class="pdt-chain-step"><b>Acción</b>Propone la secuencia que maximiza contribución respetando los compromisos en firme</div>
+        <div class="pdt-chain-step"><b>Resultado</b>El costo de cada compromiso se vuelve visible antes de aceptarlo, no después</div>
+      </div>
+      <div class="pdt-pre"><strong>Condición previa de datos:</strong> matriz de tiempos de cambio entre formatos y familias, calendario de compromisos en firme, y disponibilidad real de personal por turno — que a partir de 2027 estará respaldada por el registro electrónico de jornada.</div>
+    </div>
+
+    <div class="pdt-chain">
+      <h3 class="pdt-chain-h">Vigilancia de fórmula contra el umbral regulatorio</h3>
+      <div class="pdt-chain-steps">
+        <div class="pdt-chain-step"><b>Proceso</b>Desarrollo y ajuste de formulaciones por costo o por abasto</div>
+        <div class="pdt-chain-step"><b>Fricción</b>El umbral de 275 kcal por 100 gramos es binario: un cambio de grasa o de almidón puede cruzarlo sin que nadie lo note</div>
+        <div class="pdt-chain-step"><b>Agente</b>Recalcula densidad calórica y perfil de sellos ante cada cambio de fórmula o de proveedor</div>
+        <div class="pdt-chain-step"><b>Acción</b>Alerta antes de liberar el cambio y deja evidencia fechada y trazable de la formulación</div>
+        <div class="pdt-chain-step"><b>Resultado</b>La decisión de reformular se toma con el efecto fiscal y de etiquetado sobre la mesa</div>
+      </div>
+      <div class="pdt-pre"><strong>Condición previa de datos:</strong> fichas técnicas de materia prima con aporte energético por ingrediente, y versionado de fórmulas con fecha. La trazabilidad documental importa por sí misma: ante la autoridad, la fecha de una reformulación define qué tratamiento aplica y desde cuándo.</div>
+    </div>
+
+    <div class="pdt-chain">
+      <h3 class="pdt-chain-h">Señal de calidad y voz del consumidor</h3>
+      <div class="pdt-chain-steps">
+        <div class="pdt-chain-step"><b>Proceso</b>Atención a quejas de consumidor y a hallazgos de auditoría de clientes de maquila</div>
+        <div class="pdt-chain-step"><b>Fricción</b>Las quejas llegan por formulario, redes, marketplace y reseñas públicas, en texto libre y sin lote asociado</div>
+        <div class="pdt-chain-step"><b>Agente</b>Clasifica, agrupa por patrón y busca coincidencias con fecha, turno y línea de producción</div>
+        <div class="pdt-chain-step"><b>Acción</b>Convierte el texto en un caso con lote probable y lo enruta a calidad con prioridad</div>
+        <div class="pdt-chain-step"><b>Resultado</b>El ciclo se cierra con el consumidor y el patrón se detecta antes de que lo levante un auditor</div>
+      </div>
+      <div class="pdt-pre"><strong>Condición previa de datos:</strong> histórico de quejas en un solo repositorio y registro de producción con lote, fecha, turno y línea. Sin el vínculo lote-fecha-línea, el agente ordena quejas pero no identifica causa.</div>
+    </div>
+
+    <h3 class="pdt-h3">Dónde hemos hecho esto antes</h3>
+    <div class="pdt-cases">
+      <div class="pdt-case">
+        <div class="pdt-case-n">Panovo Alimentaria</div>
+        <div class="pdt-case-s">Grupo PROAN · pan artesanal e industrial congelado</div>
+        <div class="pdt-case-roi">3.8<sup>:1</sup></div>
+        <div class="pdt-case-roil">ROI del proyecto</div>
+        <ul>
+          <li>Incremento de 11% en el OEE de planta</li>
+          <li>Aumento de 72% en la confiabilidad de inventarios</li>
+          <li>Incremento de 29% en facturación semestral</li>
+        </ul>
+      </div>
+      <div class="pdt-case">
+        <div class="pdt-case-n">Café El Marino</div>
+        <div class="pdt-case-s">Marca mexicana de consumo masivo · canal tradicional y autoservicio</div>
+        <div class="pdt-case-roi">3.8<sup>:1</sup></div>
+        <div class="pdt-case-roil">ROI del proyecto</div>
+        <ul>
+          <li>Proyecto de eficiencia comercial y cobertura</li>
+          <li>Marca de precio accesible en anaquel compartido con multinacionales</li>
+          <li>Caso documentado en Growth Stories</li>
+        </ul>
+      </div>
+      <div class="pdt-case">
+        <div class="pdt-case-n">KRAM</div>
+        <div class="pdt-case-s">Confitería · red de detalle fragmentada</div>
+        <div class="pdt-case-roi">7.1<sup>:1</sup></div>
+        <div class="pdt-case-roil">ROI del proyecto</div>
+        <ul>
+          <li>Ejecución comercial en punto de venta</li>
+          <li>Portafolio de alta rotación y bajo ticket</li>
+          <li>Carta de recomendación firmada por el cliente</li>
+        </ul>
+      </div>
+    </div>
+    <div class="pdt-src">
+      Casos publicados por London Consulting Group. Panovo es el proyecto que compartimos contigo por
+      correo en enero de 2026. No prometemos aquí ningún resultado ni ninguna cifra para Productos de
+      Trigo: el ROI de un proyecto se define después del estudio de factibilidad, no antes.
+    </div>
+  </div>
+</section>
+
+<!-- ============ 10 ============ -->
+<section class="pdt-view" data-id="datos" data-n="10" data-t="Datos y ecosistema digital">
+  <div class="pdt-sec">
+    <div class="pdt-eyebrow">10 · Datos, gobernanza y ecosistema digital</div>
+    <h2 class="pdt-h2">Hay una pregunta que no se puede responder desde afuera</h2>
+    <p class="pdt-lede">
+      No sabemos cómo conversan hoy los sistemas de la planta con los de la comercializadora.
+      No es información pública y no la vamos a suponer. Lo que sí podemos es describir los dos
+      escenarios posibles y qué trabajo implica cada uno.
+    </p>
+
+    <div class="pdt-fork">
+      <div class="pdt-forkcard">
+        <span class="pdt-forklabel">Escenario A</span>
+        <h3 class="pdt-h4">Sistemas integrados</h3>
+        <p class="pdt-small" style="margin-bottom:var(--space-4)">
+          Planta y comercializadora comparten catálogo de SKU, el costo de producción llega conciliado
+          al estado de resultados por línea de negocio, y la orden de producción vive en el mismo
+          sistema que la orden de venta.
+        </p>
+        <p class="pdt-small">
+          <strong>Qué trabajo corresponde.</strong> El esfuerzo es de explotación, no de construcción:
+          definir la unidad común de contribución por hora, instrumentar la medición de tiempos de
+          cambio, y montar el agente de atribución sobre datos que ya existen. Es el camino corto,
+          y el prediagnóstico se concentra en el criterio de decisión y en la rutina de gobierno
+          entre las dos empresas.
+        </p>
+      </div>
+      <div class="pdt-forkcard pdt-forkcard--b">
+        <span class="pdt-forklabel">Escenario B</span>
+        <h3 class="pdt-h4">Sistemas conviviendo</h3>
+        <p class="pdt-small" style="margin-bottom:var(--space-4)">
+          Planta y comercializadora operan en sistemas distintos, con catálogos que no empatan uno a
+          uno y conciliación manual periódica. La maquila se administra con sus propios formatos,
+          por cliente.
+        </p>
+        <p class="pdt-small">
+          <strong>Qué trabajo corresponde.</strong> El esfuerzo empieza por integración: un catálogo
+          maestro único, un mapeo de equivalencias y la eliminación de la doble captura. Es más
+          trabajo, pero suele traer beneficios inmediatos antes de llegar a la analítica, porque
+          la conciliación manual consume horas de gente capaz todos los meses.
+        </p>
+      </div>
+    </div>
+
+    <div class="pdt-caveat">
+      Determinar en cuál de los dos escenarios está tu operación toma una sesión de dos horas con tu
+      equipo de sistemas y tu área de costos. Es la primera parada del estudio de factibilidad, y la
+      que define el alcance real de todo lo demás.
+    </div>
+
+    <h3 class="pdt-h3">Tres datos que van a existir aunque nadie los pida</h3>
+    <div class="pdt-stats pdt-stats--3">
+      <div class="pdt-stat pdt-st--cream">
+        <div class="pdt-stat-f">1</div>
+        <div class="pdt-stat-l">Registro electrónico de jornada</div>
+        <div class="pdt-stat-s">Obligación derivada de la reforma a la LFT publicada el 1 de mayo de 2026. Genera hora de entrada y salida por persona y por día, de forma estructurada y verificable.</div>
+      </div>
+      <div class="pdt-stat pdt-st--cream">
+        <div class="pdt-stat-f">2</div>
+        <div class="pdt-stat-l">Trazabilidad de FSSC 22000</div>
+        <div class="pdt-stat-s">El sistema de inocuidad ya obliga a registrar lote, fecha y línea. Ese dato suele estar completo por requisito de auditoría y subutilizado para costeo.</div>
+      </div>
+      <div class="pdt-stat pdt-st--cream">
+        <div class="pdt-stat-f">3</div>
+        <div class="pdt-stat-l">Evidencia de formulación fechada</div>
+        <div class="pdt-stat-s">Ante la autoridad fiscal, la fecha de una reformulación define qué tratamiento aplica. El versionado deja de ser una buena práctica y pasa a ser defensa.</div>
+      </div>
+    </div>
+    <p class="pdt-p" style="margin-top:var(--space-6)">
+      Los tres son requisitos de cumplimiento, no proyectos de analítica. Y los tres son,
+      casualmente, la materia prima exacta del agente de atribución. Esa coincidencia es la
+      razón por la que conviene diseñarlos juntos y no por separado: cumplir y medir pueden
+      resolverse con el mismo dato, si se decide antes de implementarlo.
+    </p>
+  </div>
+</section>
+
+<!-- ============ 11 ============ -->
+<section class="pdt-view" data-id="hipotesis" data-n="11" data-t="Hipótesis a validar">
+  <div class="pdt-sec">
+    <div class="pdt-eyebrow">11 · Hipótesis</div>
+    <h2 class="pdt-h2">Seis hipótesis formuladas para poder ser refutadas</h2>
+    <p class="pdt-lede">
+      Cada una indica qué indicador revisar, qué información haría falta y qué área participa.
+      Ninguna lleva impacto cuantificado: no tenemos los datos para hacerlo con seriedad.
+    </p>
+
+    <div class="pdt-hyps">
+      <div class="pdt-hyp">
+        <div class="pdt-hyp-n">H1</div>
+        <div class="pdt-hyp-t">El criterio de asignación de capacidad no está formalizado en términos de contribución por hora</div>
+        <dl>
+          <dt>Indicador</dt><dd>Existencia y antigüedad de un criterio documentado de priorización de corridas, y periodicidad con que se revisa</dd>
+          <dt>Impacto</dt><dd>Mezcla de producción no alineada con la mezcla más rentable disponible</dd>
+          <dt>Información</dt><dd>Programa de producción, órdenes atendidas y diferidas, criterio vigente de priorización</dd>
+          <dt>Área</dt><dd>Operaciones · Planeación · Comercial</dd>
+        </dl>
+      </div>
+      <div class="pdt-hyp">
+        <div class="pdt-hyp-n">H2</div>
+        <div class="pdt-hyp-t">El costo de cambio de formato no está medido ni cargado al producto que lo causa</div>
+        <dl>
+          <dt>Indicador</dt><dd>Horas de cambio y limpieza como proporción del tiempo calendario de línea; dispersión entre familias</dd>
+          <dt>Impacto</dt><dd>Capacidad perdida que no aparece en ningún estado financiero</dd>
+          <dt>Información</dt><dd>Bitácoras de línea, matriz de tiempos de cambio, tamaños de lote por SKU</dd>
+          <dt>Área</dt><dd>Producción · Mantenimiento · Costos</dd>
+        </dl>
+      </div>
+      <div class="pdt-hyp">
+        <div class="pdt-hyp-n">H3</div>
+        <div class="pdt-hyp-t">La rentabilidad de maquila y marca propia no se compara en una misma unidad de medida</div>
+        <dl>
+          <dt>Indicador</dt><dd>Existencia de un estado de resultados por economía con costo de conversión asignado</dd>
+          <dt>Impacto</dt><dd>Decisiones de aceptar o rechazar volumen tomadas sobre el margen equivocado</dd>
+          <dt>Información</dt><dd>Estructura de costeo vigente, contratos marco de maquila, cálculo de tarifa de conversión</dd>
+          <dt>Área</dt><dd>Finanzas · Comercial</dd>
+        </dl>
+      </div>
+      <div class="pdt-hyp">
+        <div class="pdt-hyp-n">H4</div>
+        <div class="pdt-hyp-t">La señal de demanda entre la comercializadora y la planta no tiene una rutina formal de contraste</div>
+        <dl>
+          <dt>Indicador</dt><dd>Frecuencia y participantes de la junta de planeación conjunta; error de pronóstico por familia</dd>
+          <dt>Impacto</dt><dd>Inventario de producto terminado en los SKU equivocados y faltantes en los correctos</dd>
+          <dt>Información</dt><dd>Pronóstico contra real por familia, rotación de producto terminado, actas de junta comercial</dd>
+          <dt>Área</dt><dd>Comercial · Cadena de Suministro · Dirección General</dd>
+        </dl>
+      </div>
+      <div class="pdt-hyp">
+        <div class="pdt-hyp-n">H5</div>
+        <div class="pdt-hyp-t">La reducción de jornada de 2027 no tiene todavía un plan de absorción operativa</div>
+        <dl>
+          <dt>Indicador</dt><dd>Horas ordinarias y extraordinarias por turno y por línea en 2026; brecha contra el tope de 46 horas</dd>
+          <dt>Impacto</dt><dd>Pérdida de horas productivas sin compensación de productividad, en una planta ya llena</dd>
+          <dt>Información</dt><dd>Esquema de turnos vigente, nómina por centro de costo, contrato colectivo si aplica</dd>
+          <dt>Área</dt><dd>Capital Humano · Producción</dd>
+        </dl>
+      </div>
+      <div class="pdt-hyp">
+        <div class="pdt-hyp-n">H6</div>
+        <div class="pdt-hyp-t">La integración con el proveedor de grasas del grupo no se está explotando como palanca de costo</div>
+        <dl>
+          <dt>Indicador</dt><dd>Condición de precio y servicio intragrupo frente a alternativas de mercado; efecto en costo de fórmula</dd>
+          <dt>Impacto</dt><dd>Ventaja estructural disponible y no capitalizada, o costo oculto trasladado entre empresas</dd>
+          <dt>Información</dt><dd>Estructura de costo de materia prima, política de precios de transferencia, histórico de abasto</dd>
+          <dt>Área</dt><dd>Compras · Finanzas · Dirección de Grupo</dd>
+        </dl>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 12 ============ -->
+<section class="pdt-view" data-id="prediagnostico" data-n="12" data-t="Estudio de factibilidad">
+  <div class="pdt-sec">
+    <div class="pdt-eyebrow">12 · Prediagnóstico</div>
+    <h2 class="pdt-h2">Cómo se resuelven esas seis preguntas: dos a tres semanas, siete entradas</h2>
+    <p class="pdt-lede">
+      El marco es el mismo en todos nuestros estudios. Lo único que cambia en el caso de Productos de
+      Trigo es el alcance y el acceso de las dos primeras entradas, por la relación entre la planta
+      y la comercializadora del grupo.
+    </p>
+
+    <div class="pdt-inputs">
+      <div class="pdt-input"><div class="pdt-input-n">1</div><div>
+        <h3 class="pdt-h4">Alcance y estrategia del estudio</h3>
+        <p class="pdt-small">Entendimiento de los retos estratégicos, definición de alcance por áreas, responsables y ubicación, designación del sponsor, y entendimiento del modelo de gobierno entre Productos de Trigo y el corporativo. <strong>Ajuste para esta cuenta:</strong> definir desde el día uno si la comercializadora entra en el alcance, porque la mitad de las hipótesis cruza esa frontera.</p>
+      </div></div>
+      <div class="pdt-input"><div class="pdt-input-n">2</div><div>
+        <h3 class="pdt-h4">Recolección de información básica</h3>
+        <p class="pdt-small">Firma de NDA, inducción general, organigramas, estados financieros, indicadores de juntas directivas y operativas, manuales de proceso y sistemas de calidad, y reunión de perfilamiento. <strong>Ajuste para esta cuenta:</strong> necesitamos acceso a la base de órdenes de producción y al catálogo de SKU de ambos lados. Sin eso, el ejercicio se queda en observación y pierde la mitad de su valor.</p>
+      </div></div>
+      <div class="pdt-input"><div class="pdt-input-n">3</div><div>
+        <h3 class="pdt-h4">Comunicación y entrevistas</h3>
+        <p class="pdt-small">Diseño del plan de entrevistas con apoyo del sponsor, kick off oficial con objetivos y factores clave de éxito, ejecución de entrevistas y reuniones de validación. Los mandos medios y el personal de piso saben dónde está el problema mucho antes que cualquier reporte.</p>
+      </div></div>
+      <div class="pdt-input"><div class="pdt-input-n">4</div><div>
+        <h3 class="pdt-h4">Gemba Walk</h3>
+        <p class="pdt-small">Gemba significa «el lugar real» en japonés: donde el trabajo ocurre y se genera el valor. Recorrido estructurado por planta y almacenes para observar flujos de producto y de personas, tiempos de ciclo, puntos de espera, cambios de formato y manejo de merma — preguntando a quien ejecuta la tarea, no a quien la supervisa. La distancia entre el proceso documentado y el proceso real es, casi siempre, donde está el dinero.</p>
+      </div></div>
+      <div class="pdt-input"><div class="pdt-input-n">5</div><div>
+        <h3 class="pdt-h4">Estadística agéntica</h3>
+        <p class="pdt-small">Con las bases que comparte el cliente, ejecutamos estudios estadísticos apoyados en inteligencia artificial agéntica. Los agentes cruzan venta, producción, merma, inventario y nómina buscando patrones que no se ven revisando cada base por separado: dispersión de productividad entre turnos y líneas, correlación entre familia o economía y rentabilidad, comportamientos atípicos por corrida.</p>
+      </div></div>
+      <div class="pdt-input"><div class="pdt-input-n">6</div><div>
+        <h3 class="pdt-h4">Nivel de Madurez Organizacional</h3>
+        <p class="pdt-small">Mide la capacidad de la empresa para la mejora continua en tres dimensiones: personas y cultura, procesos y estructuras, y tecnología, con benchmarks operativos y financieros de empresas similares. El resultado no es una calificación: es el punto de partida contra el que se mide el avance del proyecto.</p>
+      </div></div>
+      <div class="pdt-input" style="grid-column:1/-1"><div class="pdt-input-n">7</div><div>
+        <h3 class="pdt-h4">Growth Management</h3>
+        <p class="pdt-small">Encuesta que mide la mentalidad de los líderes y los aspectos organizacionales clave para el éxito de una compañía. Evalúa once elementos agrupados en cuatro bloques, con 68 reactivos en total: Estrategia y objetivos (16 reactivos, 30%), Liderazgo y cultura (19, 30%), Adaptabilidad y cambio (16, 30%) y Digitalización y eficiencia operativa (17, 10%).</p>
+      </div></div>
+    </div>
+
+    <h3 class="pdt-h3">Los cinco niveles de madurez</h3>
+    <div class="pdt-radar">
+      <div class="pdt-nmo"><div class="pdt-nmo-n">01</div><div class="pdt-nmo-t">Inicial</div><div class="pdt-nmo-d">Opera sin marco estructurado, con procesos esporádicos y resultados inconsistentes.</div></div>
+      <div class="pdt-nmo"><div class="pdt-nmo-n">02</div><div class="pdt-nmo-t">Emergente</div><div class="pdt-nmo-d">Reconoce la importancia de estandarizar, pero sin implementación consistente.</div></div>
+      <div class="pdt-nmo"><div class="pdt-nmo-n">03</div><div class="pdt-nmo-t">Definido</div><div class="pdt-nmo-d">Procesos estandarizados y documentados, aplicados con regularidad.</div></div>
+      <div class="pdt-nmo"><div class="pdt-nmo-n">04</div><div class="pdt-nmo-t">Gestionado</div><div class="pdt-nmo-d">Gestión basada en métricas y datos, con ajustes predictivos.</div></div>
+      <div class="pdt-nmo"><div class="pdt-nmo-n">05</div><div class="pdt-nmo-t">Optimizado</div><div class="pdt-nmo-d">Lidera en mejora continua e innovación, con alta adaptabilidad.</div></div>
+    </div>
+
+    <div class="pdt-deliver">
+      <h3 class="pdt-h4" style="font-size:var(--text-md)">El entregable: propuesta de proyecto</h3>
+      <p class="pdt-small" style="color:rgba(242,238,235,.84);max-width:72ch;margin-top:var(--space-3)">
+        No es un input: es lo que se construye sobre las siete entradas y sobre las oportunidades
+        identificadas. Contiene oportunidades cuantificadas en pesos, beneficios esperados, metodología
+        de implementación, cronograma, inversión y ROI. Nuestro contrato garantiza un retorno mínimo
+        de 1 a 1 sobre la inversión del cliente, y el promedio histórico de nuestros proyectos es de
+        5 a 1. Si las oportunidades no justifican el proyecto, lo decimos; ese también es un resultado
+        válido del estudio.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 13 ============ -->
+<section class="pdt-view" data-id="metodo" data-n="13" data-t="Método, fuentes y límites">
+  <div class="pdt-sec">
+    <div class="pdt-eyebrow">13 · Metodología, fuentes y limitaciones</div>
+    <h2 class="pdt-h2">Qué pudimos saber, qué no, y por qué lo decimos</h2>
+    <p class="pdt-lede">
+      Este documento se construyó sin acceso a información interna de Productos de Trigo.
+      Las limitaciones de ese método no son una disculpa: son parte de lo que estás evaluando.
+    </p>
+
+    <h3 class="pdt-h3">Cómo clasificamos cada afirmación</h3>
+    <div class="pdt-legend">
+      <div class="pdt-leg pdt-leg--f"><b>Hecho</b>Respaldado por fuente identificable y fechada.</div>
+      <div class="pdt-leg pdt-leg--s"><b>Señal</b>Indicio de tendencia que por sí solo no demuestra una conclusión.</div>
+      <div class="pdt-leg pdt-leg--h"><b>Hipótesis</b>Interpretación estratégica derivada de los hechos. Refutable.</div>
+      <div class="pdt-leg pdt-leg--i"><b>Implicación</b>Qué podría significar esa hipótesis para el negocio.</div>
+    </div>
+
+    <h3 class="pdt-h3">Fuentes consultadas</h3>
+    <div class="pdt-srcs">
+      <div class="pdt-srcrow"><b>Sitios de la empresa</b><span>prodetrigo.com (inicio, corporativo, productos y certificaciones) y galletasmaribel.com.mx (inicio, historia, productos). Consultados en octubre de 2026.</span></div>
+      <div class="pdt-srcrow"><b>Perfiles institucionales</b><span>Páginas de Productos de Trigo S.A. de C.V., Galletas Maribel y OLEOMEX en LinkedIn; página de reclutamiento en Facebook; vacantes publicadas en bolsas de empleo durante 2025 y 2026.</span></div>
+      <div class="pdt-srcrow"><b>Grupo</b><span>oleomex.com.mx y oleopalma.com.mx, apartado de empresas del grupo.</span></div>
+      <div class="pdt-srcrow"><b>Fichas de empresa</b><span>cosmos.com.mx (actividad declarada y clientes de maquila); registros de marca en bases públicas de propiedad industrial.</span></div>
+      <div class="pdt-srcrow"><b>Regulatorias</b><span>DOF: reforma constitucional del 3 de marzo de 2026 y reforma a la Ley Federal del Trabajo del 1 de mayo de 2026; resolución de la CONASAMI publicada el 9 de diciembre de 2025. Ley del IEPS, artículo 2 fracción I inciso J, y criterio normativo 5/IEPS/N del SAT. Paquete Económico 2027 entregado el 8 de septiembre de 2026.</span></div>
+      <div class="pdt-srcrow"><b>Mercado</b><span>NielsenIQ sobre marca propia y marca comercial, septiembre de 2026. ANTAD, resultados 2025 y proyección 2026, febrero de 2026. Data México (Secretaría de Economía), comercio exterior de galleta dulce, abril de 2026.</span></div>
+      <div class="pdt-srcrow"><b>Benchmark</b><span>Sitios corporativos de Gamesa/PepsiCo, Cuétara México, Grupo Bimbo y Productos de Harina; cobertura de prensa sectorial.</span></div>
+    </div>
+
+    <div class="pdt-limits">
+      <h3 class="pdt-h4" style="font-size:var(--text-md)">Limitaciones declaradas</h3>
+      <ul>
+        <li><strong>No hay cifras financieras auditables.</strong> Productos de Trigo y Grupo Oleomex son empresas privadas sin obligación de reporte público. No conocemos ingresos, márgenes, volumen de producción, merma, rotación ni inversión, y no los estimamos en ningún punto de este documento.</li>
+        <li><strong>Las cifras de plantilla no forman una serie homogénea.</strong> Aparecen «más de 550» y «más de 600» en dos apartados del mismo sitio corporativo, y una banda de 501 a 1,000 en LinkedIn. No sabemos a qué fecha corresponde cada una ni qué incluye. Por eso presentamos el rango y no una tendencia.</li>
+        <li><strong>La afirmación de ser la tercera galletera más grande de México proviene de la propia empresa</strong> y está redactada en pasado, sin fecha asociada. Las cifras de 2,200 y 900 toneladas mensuales tienen el mismo origen. No localizamos una fuente independiente que las confirme ni que las ubique en el tiempo, y por eso no las usamos como base de ningún razonamiento.</li>
+        <li><strong>No conocemos la mezcla de capacidad</strong> entre marca propia, maquila, marca privada, licencias, exportación y gobierno. Toda la tesis de este documento descansa en que esa mezcla existe y compite por el mismo recurso, no en una proporción concreta.</li>
+        <li><strong>No conocemos el ecosistema de sistemas.</strong> Por eso la sección 10 plantea dos escenarios en lugar de suponer uno.</li>
+        <li><strong>No localizamos declaraciones públicas de la dirección</strong> en los últimos 36 meses. Lo que este documento recoge sobre prioridades proviene de la misión, la visión y la narrativa histórica publicadas por la empresa, no de entrevistas.</li>
+        <li><strong>El tratamiento fiscal de los esquemas de maquila</strong> depende de los contratos y no es información pública. Las celdas correspondientes de la sección 05 se dejaron vacías a propósito.</li>
+      </ul>
+    </div>
+
+    <h3 class="pdt-h3">Sobre London Consulting Group</h3>
+    <p class="pdt-p">
+      Somos una firma de consultoría enfocada en transformación y mejora empresarial. No sólo
+      identificamos qué debería cambiar: acompañamos la implementación y nos quedamos hasta que
+      los cambios ocurren en la operación. Trabajamos con metodología London, con ROI mínimo
+      garantizado de 1 a 1 por contrato sobre la inversión del cliente y un promedio histórico de
+      5 a 1. Los casos y cartas de recomendación de nuestros clientes están publicados en
+      londoncg.mx/growth-stories.
+    </p>
+  </div>
+</section>
+
+<!-- ============ CTA ============ -->
+<section class="pdt-view" data-id="cta" data-n="→" data-t="Siguiente paso">
+  <div class="pdt-sec">
+    <div class="pdt-ctapanel">
+      <div class="pdt-eyebrow" style="color:var(--london-lime)">Siguiente paso</div>
+      <h2 class="pdt-h2">Retomemos la conversación de febrero. Treinta minutos.</h2>
+      <p class="pdt-lede">
+        En febrero nos sentamos a hablar de nuestra metodología. Esta vez traemos algo distinto:
+        una tesis concreta sobre tu negocio, construida con fuentes públicas, para contrastarla contigo.
+        Si las hipótesis están mal planteadas, dínoslo — esa información también nos sirve, y
+        te ahorra el resto del camino.
+      </p>
+      <p class="pdt-lede" style="font-size:var(--text-base)">
+        Si resultan razonables, el siguiente paso natural es un estudio de factibilidad de dos a tres
+        semanas que las convierta en números. Buscamos esa conversación de forma directa: no hay
+        nada que ocultar en eso.
+      </p>
+
+      <div class="pdt-actions">
+        <a class="pdt-cta-a" href="https://wa.me/523318628273?text=Hola%20Leonardo%2C%20soy%20Juan%20Ignacio%20P%C3%A9rez%20de%20Productos%20de%20Trigo.%20Revis%C3%A9%20el%20an%C3%A1lisis%20que%20prepararon.%20Agendemos%20los%2030%20minutos." target="_blank" rel="noopener">
+          Escribir por WhatsApp
+        </a>
+        <a class="pdt-cta-a pdt-cta-a--ghost" href="mailto:leonardo.pimentel@londoncg.mx?subject=Productos%20de%20Trigo%20%C2%B7%20Contraste%20de%20hip%C3%B3tesis">
+          Responder por correo
+        </a>
+      </div>
+
+      <div class="pdt-sign">
+        <div>
+          <b>Leonardo Pimentel</b>
+          Director de Operaciones · London Consulting Group México<br>
+          <a href="tel:+523318628273">33 1862 8273</a> · <a href="mailto:leonardo.pimentel@londoncg.mx">leonardo.pimentel@londoncg.mx</a>
+        </div>
+        <div style="color:rgba(242,238,235,.7)">
+          Av. Del Roble 660, Piso 3, Oficina 405<br>
+          Valle del Campestre, San Pedro Garza García, N.L.<br>
+          londoncg.com
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</template>
+
+<script>
+(function(){
+  "use strict";
+
+  var tpl   = document.getElementById("pdt-tpl");
+  var views = document.getElementById("pdt-views");
+  var hub   = document.getElementById("pdt-hub");
+  var index = document.getElementById("pdt-index");
+
+  views.appendChild(tpl.content.cloneNode(true));
+  var sections = Array.prototype.slice.call(views.querySelectorAll(".pdt-view"));
+
+  var BLURBS = {
+    tesis:"Por qué el cuello de botella migró de vender a repartir capacidad.",
+    hallazgos:"Ocho hallazgos con fuente, fecha y nivel de certeza.",
+    mercado:"Marca propia, retail y comercio exterior, 2025-2026.",
+    compania:"De La Occidental a hoy: lo que ya funciona.",
+    economias:"Marca, maquila, marca privada, licencia, exportación y gobierno.",
+    benchmark:"Cuatro variables y cinco galleteras comparadas.",
+    forzadores:"Jornada, salario mínimo e IEPS: qué es hecho y qué no.",
+    implicaciones:"Dónde se pierde margen sin que nadie se equivoque.",
+    ia:"Cuatro agentes y la condición de datos de cada uno.",
+    datos:"Dos escenarios posibles de sistemas, y qué trabajo implica cada uno.",
+    hipotesis:"Seis hipótesis con indicador, información y área.",
+    prediagnostico:"Siete entradas, dos a tres semanas, un entregable.",
+    metodo:"Fuentes, clasificación y limitaciones declaradas.",
+    cta:"Treinta minutos para contrastar la tesis."
+  };
+
+  /* ---- Índice ---- */
+  sections.forEach(function(sec){
+    var id = sec.dataset.id, n = sec.dataset.n, t = sec.dataset.t;
+    var b = document.createElement("button");
+    b.type = "button";
+    b.className = "pdt-tile" + (id === "cta" ? " pdt-tile--cta" : "");
+    b.setAttribute("data-go", id);
+    b.innerHTML =
+      '<span class="pdt-tile-n">' + (id === "cta" ? "CTA" : n) + '</span>' +
+      '<span class="pdt-tile-t">' + t + '</span>' +
+      '<span class="pdt-tile-d">' + (BLURBS[id] || "") + '</span>';
+    index.appendChild(b);
+  });
+
+  /* ---- Barras de navegación y pies ---- */
+  sections.forEach(function(sec, i){
+    var prev = sections[i-1], next = sections[i+1];
+
+    var bar = document.createElement("div");
+    bar.className = "pdt-bar";
+    bar.innerHTML =
+      '<div class="pdt-bar-in">' +
+        '<button type="button" class="pdt-btn" data-go="">Índice</button>' +
+        '<div class="pdt-bar-mid">' +
+          '<span class="pdt-bar-n">' + sec.dataset.n + '</span>' +
+          '<span class="pdt-bar-t">' + sec.dataset.t + '</span>' +
+        '</div>' +
+        '<div class="pdt-arrows">' +
+          '<button type="button" class="pdt-arrow" data-go="' + (prev ? prev.dataset.id : "") + '"' +
+            (prev ? '' : ' disabled') + ' aria-label="Sección anterior">&#8592;</button>' +
+          '<button type="button" class="pdt-arrow" data-go="' + (next ? next.dataset.id : "") + '"' +
+            (next ? '' : ' disabled') + ' aria-label="Sección siguiente">&#8594;</button>' +
+        '</div>' +
+      '</div>';
+    sec.insertBefore(bar, sec.firstChild);
+
+    var inner = sec.querySelector(".pdt-sec");
+    var foot = document.createElement("div");
+    foot.className = "pdt-foot";
+    foot.innerHTML =
+      '<button type="button" class="pdt-btn" data-go="">Volver al índice</button>' +
+      (next
+        ? '<div style="text-align:right"><div class="pdt-foot-next">Siguiente · ' + next.dataset.n + '</div>' +
+          '<button type="button" class="pdt-btn pdt-btn--solid" data-go="' + next.dataset.id + '">' + next.dataset.t + '</button></div>'
+        : '<div style="text-align:right"><div class="pdt-foot-next">Fin del documento</div></div>');
+    inner.appendChild(foot);
+  });
+
+  /* ---- Ruteo ---- */
+  function render(id, focus){
+    var found = null;
+    sections.forEach(function(s){
+      var on = (s.dataset.id === id);
+      s.classList.toggle("is-on", on);
+      if (on) found = s;
+    });
+    if (found){
+      hub.hidden = true;
+      document.title = found.dataset.n + " · " + found.dataset.t + " · Productos de Trigo · LCG";
+    } else {
+      hub.hidden = false;
+      document.title = "Productos de Trigo · Análisis preparado por London Consulting Group";
+    }
+    window.scrollTo(0, 0);
+    if (focus){
+      var h = found ? found.querySelector(".pdt-h2") : hub.querySelector(".pdt-h1");
+      if (h){ h.setAttribute("tabindex","-1"); h.focus({preventScroll:true}); }
+    }
+  }
+
+  function go(id, push){
+    var hash = id ? ("#" + id) : "#";
+    if (push !== false){
+      if (history.pushState) history.pushState({id:id}, "", hash);
+      else location.hash = hash;
+    }
+    render(id, true);
+  }
+
+  document.addEventListener("click", function(e){
+    var el = e.target.closest ? e.target.closest("[data-go]") : null;
+    if (!el) return;
+    e.preventDefault();
+    go(el.getAttribute("data-go"), true);
+  });
+
+  window.addEventListener("popstate", function(){
+    render((location.hash || "").replace(/^#/, ""), true);
+  });
+
+  document.addEventListener("keydown", function(e){
+    if (e.key === "Escape" && hub.hidden) go("", true);
+  });
+
+  render((location.hash || "").replace(/^#/, ""), false);
+})();
+</script>
+
+<!--
+  INSTRUMENTACIÓN PENDIENTE
+  Pegar aquí el <script> de Cloudflare Web Analytics antes de publicar, sin
+  reemplazar los scripts existentes. Si tras varios minutos el contador de
+  visitas sigue en cero, usar la variante con el token en la URL
+  (beacon.min.js?token=...) en lugar del atributo data-cf-beacon.
+-->
+</body>
+</html>
